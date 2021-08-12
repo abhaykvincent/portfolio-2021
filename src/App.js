@@ -5,12 +5,14 @@ import Header from './components/header/header'
 
 // Vendors
 
-// AOS script and css import
-import AOS from 'aos';
-import 'aos/dist/aos.css'
 // React Scroll Parallax
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 
+// AOS script and css import
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
+//AOS initalization
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -33,7 +35,11 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+// APP
 function App() {
+
+  // States
   const [notification, setNotification] = useState('');
   return (
     <ParallaxProvider>
