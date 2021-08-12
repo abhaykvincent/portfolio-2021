@@ -48,10 +48,16 @@ function App() {
     <ParallaxProvider>
 
       <div className="App">
+        
+        {/* Header */}
         <Header/>
+
+        {/* Notification */}
         <div className={`notification ${notification}` }>
           <div className="popup">Email Copied</div>
         </div>
+
+        {/* Sections */}
         <section className="first-impression">
           <div className="first-impression__left">
             <div className="hi">Hi</div>
