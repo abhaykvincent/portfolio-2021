@@ -1,0 +1,47 @@
+
+  header{
+    .header{
+        position: fixed;
+        top:0px;
+        height: 10vh;
+        width: 100vw;
+        padding: 0px 5vw;
+
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        z-index: 99;
+
+        .right{
+            display: grid;
+            grid-column:4;
+            align-content: center;
+            color: orange;
+        }
+        .hamburger-icon{
+            grid-column:2/4;
+
+            font-size: 5vmin;
+            color: #1b0e04a2;
+            font-weight: bold;
+            background: -webkit-linear-gradient(10deg, #4e4e4e, #000000);
+            cursor: pointer;
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        
+        }
+    }
+    .hamburger-menu{
+        position: fixed;
+        top:0px;
+        width: 100vw;
+        height: 100vh;
+        background:  orange;
+        z-index: 98;
+        transform: translateY(100%);
+        &.active{
+            transform: translateY(0%);
+        }
+    }
+
+  }
