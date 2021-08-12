@@ -48,7 +48,7 @@ function App() {
     <ParallaxProvider>
 
       <div className="App">
-        
+
         {/* Header */}
         <Header/>
 
@@ -57,7 +57,9 @@ function App() {
           <div className="popup">Email Copied</div>
         </div>
 
-        {/* Sections */}
+        {/* Sections */  //REF-01
+        }   
+         
         <section className="first-impression">
           <div className="first-impression__left">
             <div className="hi">Hi</div>
@@ -100,7 +102,14 @@ function App() {
           
         </section>
         <section className="the-process">
-        <Parallax y={[-80,20]}><div className="head-text-border"> Trust The Process</div></Parallax>
+          {/* Heading */}
+          <Parallax y={[-80,20]}><div className="head-text-border">
+            Trust The Process</div>
+          </Parallax>
+
+          {/* Processes */}
+          
+          {/* Strategy */}
           <div className="process strategy" data-aos="flip-up">
             <div className="strategy__left">
               <div className="process-heading">
@@ -276,7 +285,7 @@ function App() {
                 </Parallax>
               </div>
           </div>
-          
+          {/* Design */}
           <div className="process design"  data-aos="flip-up" data-aos-delay="0.8s">
             <div className="design__left">
               <Parallax y={[60,0]}>
@@ -425,7 +434,7 @@ function App() {
                 </div>
               </div>
           </div>
-          
+          {/* Development */}
           <div className="process development" data-aos="flip-up" >
             <div className="development__left">
               <div className="process-heading">
@@ -1093,9 +1102,82 @@ function App() {
           </div>
         </div>
         </section>
-        {
-        /* 
-        <section className="timeline">
+        
+        {/* Frequency Asked  Questions */}
+        <section className="faq">
+          <Parallax y={[-80,60]} className="head__scroll-outer"><div className="faq__head">Frequently Asked Questions</div></Parallax>
+          <div className="faq__body">
+            <div className="faq__questions">
+              <div className="question-answer">
+                <div className="question">
+                  <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto et eaque, libero adipisci laudantium quos!</h2>
+                  <div className="plus-icon"></div>
+                  <div className="answer"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto et eaque, libero adipisci laudantium quos!</p></div>
+                  
+                  </div>
+                <div className="question">
+                  <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto et eaque, libero adipisci laudantium quos!</h2>
+                  <div className="plus-icon"></div>
+                  <div className="answer"><p></p></div>
+                  
+                  </div>
+                <div className="question">
+                  <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto et eaque, libero adipisci laudantium quos!</h2>
+                  <div className="plus-icon"></div>
+                  <div className="answer"><p></p></div>
+                  
+                  </div>
+                </div>
+              </div>
+            <div className="faq__image"></div>
+          </div>
+        </section>
+
+        {/* Call to action */}
+        <section className="cta">
+          <div className="end">
+            <h1>And Now its your turn to say</h1>
+            <p>I’ll Make it easy for you… This is how to pronounce my name - Abhay</p>
+            <p>I would love to here from you?</p>
+          </div>
+          <div className="email-cta">
+                <div className="icon"></div>
+                <div className="email-address">abhaykvincent@gmail.com</div>
+          </div>
+          <div className="cta-social social-links">
+                <div className="social"></div>
+                <div className="social"></div>
+                <div className="social"></div>
+                <div className="social"></div>
+              </div>
+          </section>
+        
+        {/* Footer */}
+        <footer>
+          <div className="footer-quote">
+            <div className="name">Lorem, ipsum.</div>
+            <div className="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, et?</div>
+          </div>
+        </footer>
+
+      </div>
+
+    </ParallaxProvider> /* Parellax provider CONTAINER !!  END !! */
+  );
+}
+
+export default App;
+
+
+
+// This section scraped out for future  use.
+// Currently  not using in the sections.
+
+// Original referance [ REF-1 ]
+// Can  input inside  REF-1 
+
+
+{/* <section className="timeline">
 
         <Parallax y={[-100,100]} className="head__scroll-outer"><div className="timeline__head">Timeline</div></Parallax>
           <div className="timeline-cards">
@@ -1151,64 +1233,5 @@ function App() {
                   ></div>
                 </Parallax>
           </div>
-        </section>
-        */
-        }
-        <section className="faq">
-        <Parallax y={[-80,60]} className="head__scroll-outer"><div className="faq__head">Frequently Asked Questions</div></Parallax>
-            <div className="faq__body">
-              <div className="faq__questions">
-                <div className="question-answer">
-                  <div className="question">
-                    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto et eaque, libero adipisci laudantium quos!</h2>
-                    <div className="plus-icon"></div>
-                    <div className="answer"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto et eaque, libero adipisci laudantium quos!</p></div>
-                    
-                    </div>
-                  <div className="question">
-                    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto et eaque, libero adipisci laudantium quos!</h2>
-                    <div className="plus-icon"></div>
-                    <div className="answer"><p></p></div>
-                    
-                    </div>
-                  <div className="question">
-                    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto et eaque, libero adipisci laudantium quos!</h2>
-                    <div className="plus-icon"></div>
-                    <div className="answer"><p></p></div>
-                    
-                    </div>
-                  </div>
-                </div>
-              <div className="faq__image"></div>
-            </div>
-          </section>
-        <section className="cta">
-          <div className="end">
-            <h1>And Now its your turn to say</h1>
-            <p>I’ll Make it easy for you… This is how to pronounce my name - Abhay</p>
-            <p>I would love to here from you?</p>
-          </div>
-          <div className="email-cta">
-                <div className="icon"></div>
-                <div className="email-address">abhaykvincent@gmail.com</div>
-          </div>
-          <div className="cta-social social-links">
-                <div className="social"></div>
-                <div className="social"></div>
-                <div className="social"></div>
-                <div className="social"></div>
-              </div>
-          </section>
-        <footer>
-          <div className="footer-quote">
-            <div className="name">Lorem, ipsum.</div>
-            <div className="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, et?</div>
-          </div>
-        </footer>
-      </div>
+        </section>*/}
 
-    </ParallaxProvider>
-  );
-}
-
-export default App;
