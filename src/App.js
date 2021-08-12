@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 import './App.scss';
+// Components
 import Header from './components/header/header'
+
+// Vendors
+
+// AOS script and css import
 import AOS from 'aos';
-import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import 'aos/dist/aos.css'
+// React Scroll Parallax
+import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
