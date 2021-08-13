@@ -1087,12 +1087,11 @@ function App() {
           </div>
         </section>
         <section className="illustrations">
-          
-        <Parallax y={[-80,40]} className="head__scroll-outer"><div className="illustrations__head">Illustrations</div></Parallax>
-        <div className="illustrations__body">
-          
-        <div className="art-strip">
-        <Parallax x={[10, -100]}>
+          <Parallax y={[-80,40]} className="head__scroll-outer"><div className="illustrations__head">Illustrations</div></Parallax>
+          <div className="illustrations__body">
+            
+          <div className="art-strip">
+          <Parallax x={[10, -100]}>
             <div className="block"></div>
             {/* <div className="block">2</div>
             <div className="block">3</div>
@@ -1102,7 +1101,6 @@ function App() {
           </div>
         </div>
         </section>
-        
         {/* Frequency Asked  Questions */}
         <section className="faq">
           <Parallax y={[-80,60]} className="head__scroll-outer"><div className="faq__head">Frequently Asked Questions</div></Parallax>

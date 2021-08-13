@@ -1016,19 +1016,70 @@
 @media (max-width: 425px) { 
   .App{
     section{
+      &.first-impression {
+        display: grid;
+        height: auto;
+        padding: 0vw 0vw;
+        padding-top: 0vh;
+        grid-template-columns: 1fr 0fr;
+        .first-impression__left{
+        padding: 20px  40px 40px 40px;
+          .name-title-social{
+            .social-links{
+              display: grid;
+              grid-template-columns: 1fr 0fr;
+            }
+          }
+        }
+        .cta-wrap {
+          display: grid;
+          grid-template-columns:1fr 0fr;
+          grid-auto-flow: column;
+          align-content: center;
+          .email-cta {
+            justify-self: center;
+          }
+          .copy-icon{
+            display: none;
+          }
+      }
+    }
+    &.first-imagery-impression {
+      .image-strip {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr ;
+      grid-gap: 16px;
+      height: 100vh;
+      transform: translateY(0%);
+  }
+      .image-background-layer{
+        height:0px;
+      }
+    }
     &.the-process{
       .head-text-border{
         font-size: 3rem;
       }
       .process-heading {
-        font-size: 3rem;
+        font-size: 3rem ;
       }
       .process{
         display: grid;
         grid-template-columns: 1fr ;
+        grid-template-rows: auto 50vh ;
       }
     }
   }
+
+  .parallax-outer{
+    width: 100%;
+    height: 100%;
+    .parallax-inner{
+      width: 100%;
+      height: calc(100% - 5vw);
+      }
+    }
 }
 }
 
