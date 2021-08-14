@@ -1142,6 +1142,9 @@
       
       }
       &.quick-intro{
+        .quick-intro__head{
+          font-size: 2.5rem ;
+        }
         .quick-intro__body{
           display: grid;
           grid-template-columns: 100%;
@@ -1254,15 +1257,21 @@
         
       }
       &.case-study-projects{
+        .case-study-projects__head{
+          
+          font-size: 2.5rem ;
+        }
         .case-study-projects__body{
           .projects{
             padding: 0vw 10vw;
             .project,&.odd{
               width:100% !important;
-              height:200vh;
+              height:200vh  !important;
               display:grid;
               margin: 0px  !important;
-              grid-template-rows: 1fr  2fr 1fr;
+              grid-template-rows: auto  auto auto !important;
+              grid-auto-flow: row;
+              background:rgba(238, 238, 238, 0) !important;
               .project-head{
                 position:relative !important;
                 width:100%  !important;
@@ -1274,9 +1283,15 @@
               }
               .project-body {
                 position: relative !important;
+                top: 0px !important;
+                right: 0!important;
                 height: 60%;
                 width: 100% !important;
-            }
+              }
+              .project-display{
+                height: 80vw  !important;
+                background-color:#f7a500;
+              }
             }
           }
         }
