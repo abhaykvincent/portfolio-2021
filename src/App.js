@@ -111,9 +111,9 @@ function App() {
         </section>
         <section className="the-process">
           {/* Heading */}
-          <Parallax y={[-80,20]}><div className="head-text-border">
+          {/* <Parallax y={[-80,20]}> */}<div className="head-text-border">
             Trust The Process</div>
-          </Parallax>
+          å
 
           {/* Processes */}
           
