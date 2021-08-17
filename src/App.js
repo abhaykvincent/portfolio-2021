@@ -113,7 +113,7 @@ function App() {
           {/* Heading */}
           {/* <Parallax y={[-80,20]}> */}<div className="head-text-border">
             Trust The Process</div>
-          å
+          {/* </Parallax> */}
 
           {/* Processes */}
           
@@ -138,7 +138,7 @@ function App() {
               </div>
             <div className="strategy__right">
                   <div className="process-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="841.5" height="749.992" viewBox="0 0 841.5 749.992">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="841.5" height="549.992" viewBox="0 0 841.5 749.992">
                       <defs>
                         <filter id="Rectangle_34" x="274.5" y="328.992" width="567" height="421" filterUnits="userSpaceOnUse">
                           <feOffset dy="3" input="SourceAlpha"/>
