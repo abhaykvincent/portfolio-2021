@@ -899,7 +899,9 @@ function App() {
           
           </section>
         <section className="quick-intro">
-          <Parallax y={[-80,40]}><div className="quick-intro__head"> &lt;/&gt;</div></Parallax>
+          {/* <Parallax y={[-80,40]}> */}
+          <div className="quick-intro__head"> &lt;/&gt;</div>
+          {/* </Parallax> */}
           <div className="quick-intro__body">
             <div className="quick-intro__body__left"></div>
             <div className="quick-intro__body__right">
@@ -993,7 +995,7 @@ function App() {
         </div>
           </section>
         <section className="case-study-projects">
-        <Parallax y={[-80,20]} className="head__scroll-outer"><div className="case-study-projects__head">Projects</div></Parallax>
+        <Parallax y={[0,0]} className="head__scroll-outer"><div className="case-study-projects__head">Projects</div></Parallax>
           <div className="case-study-projects__body">
             <div className="projects">
 
@@ -1115,7 +1117,7 @@ function App() {
           </div>
         </section>
         <section className="illustrations"> 
-          <Parallax y={[-80,40]} className="head__scroll-outer"><div className="illustrations__head">Illustrations</div></Parallax>
+          <Parallax y={[0,0]} className="head__scroll-outer"><div className="illustrations__head">Illustrations</div></Parallax>
           <div className="illustrations__body">
             
           <div className="art-strip">
@@ -1131,7 +1133,7 @@ function App() {
         </section>
         {/* Frequency Asked  Questions */}
         <section className="faq">
-          <Parallax y={[-80,60]} className="head__scroll-outer"><div className="faq__head">Frequently Asked Questions</div></Parallax>
+          <Parallax y={[0,0]} className="head__scroll-outer"><div className="faq__head">Frequently Asked Questions</div></Parallax>
           <div className="faq__body">
             <div className="faq__questions">
               <div className="question-answer">
