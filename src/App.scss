@@ -45,7 +45,7 @@
     }
   }
   section{
-    width: 100vw;
+    width: 100%;
     &.first-impression{
       display: grid;
       min-height: 90vh;
@@ -384,17 +384,15 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap:10vw;
-        height: 55vw;
         .quick-intro__body__left{
           
           background-image: url('../src/images/photos-abhay/Image01@2x.jpg');
           background-size:140% ;
           background-repeat: no-repeat;
-          background-position: bottom;
+          background-position: top;
           border-radius: 4px;
         }
         .quick-intro__body__right{
-          height: 40vh;
           .quick-intro__main{
             .head-text{
               font-size: 4vw;
@@ -488,14 +486,13 @@
         .projects{
           .project{
             position: relative;
-            margin-bottom: 12vw;
+            margin-bottom: 30vw;
             background-size: auto 90%;
             background-repeat: no-repeat;
 
             &{
-              width:90vw;
+              width:100vw;
               height: 70vh;
-              margin-right: 10vw;
               .project-display{
                 height: 80%;
               }
@@ -563,9 +560,8 @@
               }
             }
             &.odd{
-              width:90vw;
+              width:100%;
               height: 70vh;
-              margin-left: 10vw;
               background-position:center left 5%;
               .project-display{
                 height: 80%;
@@ -641,9 +637,8 @@
               }
             }
             &.even{
-              width:90vw;
+              width:100%;
               height: 70vh;
-              margin-right: 10vw;
               .project-display{
                 height: 80%;
               }
@@ -653,7 +648,7 @@
                 left:0px;
                 height: 80%;
                 width: 50%;
-                z-index: 3;
+                z-index: 23;
                 .parallax-inner{
                   width: 100%;
                   height: 100%;
@@ -667,7 +662,7 @@
                 height: 100%;
                 width: 100%;
                 background-color: rgb(255, 255, 255);
-                z-index: 3;
+                z-index: 23;
                 border-radius: 4px 0px;
                 }
                 .head__project-details{
@@ -678,7 +673,7 @@
                   height: 100%;
                   width: 100%;
                   padding: 0px 5vw 0px 10vw;
-                  z-index: 5;
+                  z-index: 25;
                   
                   .head__project-detail{
                     display: grid;
@@ -738,18 +733,31 @@
             }
             &:nth-child(1){
               z-index: 23;
-              background-color:#ae77b3 ;
+              background-color:#FFE2CB ;
             }
             &:nth-child(2){
               z-index: 22;
               background-color:#FFE2CB ;
-              background-image:url('../src/images/projects/movies.png') ;
+              //background-image:url('../src/images/projects/movies.png') ;
               background-position:center right 5%;
             }
             &:nth-child(3){
               z-index: 21;
-              background-color:#81b377 ;
-              background-image:url('../src/images/projects/easy-groceries.svg') ;
+              background-color:#FFE2CB ;
+              //background-image:url('../src/images/projects/easy-groceries.svg') ;
+              background-position:center left 5%;
+              background-size: auto 60%;
+            }
+            &:nth-child(4){
+              z-index: 22;
+              background-color:#FFE2CB ;
+              //background-image:url('../src/images/projects/movies.png') ;
+              background-position:center right 5%;
+            }
+            &:nth-child(5){
+              z-index: 21;
+              background-color:#FFE2CB ;
+              //background-image:url('../src/images/projects/easy-groceries.svg') ;
               background-position:center left 5%;
               background-size: auto 60%;
             }
@@ -779,6 +787,15 @@
                 opacity: 0;
                 animation: project-name-reveal 1s;
                 animation-delay: 0.5s;
+                animation-fill-mode: forwards;
+              }
+              .button{
+                margin-top: 8px*10;
+
+                transform: translateY(100px);
+                opacity: 0;
+                animation: project-name-reveal 0.4s;
+                animation-delay: 1.2s;
                 animation-fill-mode: forwards;
               }
               &.odd{
@@ -821,6 +838,7 @@
             height: 60vw;
             width: 200vw;
             background: url('../src/images/illustrations/illustrations-mock-undraw-collecton4.svg');
+            background-size: auto 80%;
           }
         }
       }
@@ -881,8 +899,6 @@
       .faq__body{
         display: grid;
         grid-template-columns: 5fr 3fr;
-
-        height: 80vh;
         .faq__questions{
           height: 100%;
           padding: 5vw;
@@ -926,9 +942,9 @@
       }
     }
     &.cta{
-      margin-top: 10vw;
+      display:grid;
       padding: 40px;
-      background:rgba(255, 255, 255, 0.6);
+      background:#fef7ed;
       .end{
         h1{
           font-size: 8px*7;
@@ -942,7 +958,6 @@
         margin-top: 8px*8;
       }
       text-align: center;
-      height: 50vh;
     }
 
 
@@ -975,12 +990,28 @@
   }
 
   footer{
-    height: 36px;
     width: 100vw;
     font-size: 12px;
-    font-weight: bold;
+    padding: 8px 10vw;
+    font-size: 1em;
     color:white;
     background:rgb(22, 22, 22);
+    .footer-quote{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      .copy{
+        text-align: center;
+      }
+      .legal{
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: right;
+        grid-gap: 8px;
+        .terms-conditions{
+        }
+    
+      }
+    }
   }
 
 
@@ -1087,6 +1118,11 @@
       }
     }
   }
+  section.cta{
+    .cta-wrap{
+      justify-content: center;
+    }
+  }
   
   .project-head__scroll{
     height: 100%;
@@ -1095,6 +1131,45 @@
     z-index: 3;
     border-radius: 4px 0px;
     }
+}
+.button{
+  display: inline-block;
+  grid-template-columns: 8px*5 auto;
+  justify-self: start;
+  background-color: orange;
+  border: 1px solid orange;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 8px  8px*4;
+  color: white;
+  &:hover{
+
+    background-color: rgb(253, 152, 0);
+  border: 1px solid rgb(253, 152, 0);
+  }
+  .icon{
+    float: left;
+    width:8px*6;
+    height:8px*6;
+
+    background-image: url('../src/images/icons/ic_mail_outline_48px.png');
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size:50% ;
+  }
+  .email-address{
+    display: grid;
+    align-content: center;
+    float: left;
+    margin: auto 0px;
+    padding-right: 8px*3;
+    height:8px*6;
+    vertical-align: center;
+
+    color: white;
+    font-weight: 600;
+  }
 }
 @media (max-width: 425px) { 
   .App{
@@ -1155,7 +1230,9 @@
             height: auto;;
             .quick-intro__main{
               .head-text {
+                width: 100%;
                 font-size: 2rem;
+                color: white;
             }
             .head-text-border {
               font-size: 2rem;
@@ -1382,7 +1459,7 @@
           height: 50vh!important;
           .block {
             height: 100%!important;
-            background-size:  auto 100%;
+            background-size:  auto 80%;
         }
         } 
       } 
