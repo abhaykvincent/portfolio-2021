@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { /* useEffect, useRef, */ useState } from 'react';
 import './App.scss';
 // Components
 import Header from './components/header/header'
@@ -36,6 +36,14 @@ AOS.init({
 
 });
 
+
+
+/* function disableScrolling(){
+  var x=window.scrollX;
+  var y=window.scrollY;
+  window.onscroll=function(){window.scrollTo(x, y);};
+} */
+
 // APP
 function App() {
 
@@ -53,8 +61,8 @@ function App() {
         <Header/>
 
         {/* Notification */}
-        <div className={`notification ${notification}` }>
-          <div className="popup">Email Copied</div>
+        <div className={`notification ${notification} fixed` }>
+          <div className="popup">Website maintenance in Progress. Portfolio 2021 RELEASING this FALL !</div> 
         </div>
 
         {/* Sections */  //REF-01
@@ -103,9 +111,9 @@ function App() {
         </section>
         <section className="the-process">
           {/* Heading */}
-          <Parallax y={[-80,20]}><div className="head-text-border">
+          {/* <Parallax y={[-80,20]}> */}<div className="head-text-border">
             Trust The Process</div>
-          </Parallax>
+          {/* </Parallax> */}
 
           {/* Processes */}
           
@@ -129,9 +137,8 @@ function App() {
                 </div>
               </div>
             <div className="strategy__right">
-                <Parallax y={[60,0]}>
                   <div className="process-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="841.5" height="749.992" viewBox="0 0 841.5 749.992">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="841.5" height="549.992" viewBox="0 0 841.5 749.992">
                       <defs>
                         <filter id="Rectangle_34" x="274.5" y="328.992" width="567" height="421" filterUnits="userSpaceOnUse">
                           <feOffset dy="3" input="SourceAlpha"/>
@@ -157,7 +164,7 @@ function App() {
                         <g class="rectangle_34-2" transform="matrix(1, 0, 0, 1, 818.5, 2725.57)" filter="url(#Rectangle_34)">
                           <rect  id="Rectangle_34-2" data-name="Rectangle 34"rx="4" transform="translate(283.5 334.99)" fill="#ef9e4b" opacity="0.2"/>
                         </g>
-                        <g   class="strategy-1"   transform="matrix(1, 0, 0, 1, 818.5, 2725.57)" filter="url(#Rectangle_35)">
+                        <g   class="strategy-box"   transform="matrix(1, 0, 0, 1, 818.5, 2725.57)" filter="url(#Rectangle_35)">
                           <rect  id="Rectangle_35-2" data-name="Rectangle 35" width="522" height="127" rx="4" transform="translate(35.5 544.99)" fill="#fff"/>
                         </g>
                         <g   class="strategy-1" id="undraw_in_thought_gjsf" transform="translate(818.5 2725.571)">
@@ -282,13 +289,11 @@ function App() {
                     </svg>
 
                   </div>
-                </Parallax>
-              </div>
+               </div>
           </div>
           {/* Design */}
           <div className="process design"  data-aos="flip-up" data-aos-delay="0.8s">
             <div className="design__left">
-              <Parallax y={[60,0]}>
                   <div className="process-image">
                   <svg xmlns="http://www.w3.org/2000/svg"  width="815" height="629.924" viewBox="0 0 815 629.924">
                     <defs>
@@ -308,15 +313,11 @@ function App() {
                       </filter>
                     </defs>
                     <g  class="design_svg" id="Group_63" data-name="Group 63" transform="translate(-140 -1933.639)">
-                      <g class="design-1"  id="Group_3" data-name="Group 3" transform="translate(0 -2772.437)">
-                        <g transform="matrix(1, 0, 0, 1, 140, 4706.08)" filter="url(#Rectangle_19)">
-                          <rect id="Rectangle_19-2" data-name="Rectangle 19" width="522" height="127" rx="4" transform="translate(284 424.92)" fill="#fff"/>
-                        </g>
-                      </g>
+                      
                       <g class="rectangle_18-2" transform="matrix(1, 0, 0, 1, 140, 1933.64)" filter="url(#Rectangle_18)">
                         <rect id="Rectangle_18-2" data-name="Rectangle 18" width="549" height="493" rx="4" transform="translate(9 124.92)" fill="#ef9e4b" opacity="0.2"/>
                       </g>
-                      <g class="design-3" id="undraw_design_components_9vy6" transform="translate(196.678 1933.64)">
+                      <g class="design-1" id="undraw_design_components_9vy6" transform="translate(196.678 1933.64)">
                         <path id="Path_128" data-name="Path 128" d="M269.838,205.26A159,159,0,0,0,209.87,216.89c-.767.314-1.537.63-2.307.953A159.622,159.622,0,0,0,110,365.1V539.509a6.955,6.955,0,0,0,6.947,6.947l.138.012c133.906,24.318,264.085,36.64,387.028,36.64q2.765,0,5.524-.008c120.851-.368,238.524-12.69,349.752-36.626l.162-.017a6.955,6.955,0,0,0,6.948-6.947v-327.3a6.955,6.955,0,0,0-6.947-6.947Z" transform="translate(-110 -205.26)" fill="#2e3346"/>
                         <path id="Path_40" data-name="Path 40" d="M854.443,385.452a4.59,4.59,0,1,0,0,9.181H969.528a4.591,4.591,0,1,0,.151-9.18H854.443Z" transform="translate(-278.732 -246.355)" fill="#ffa64b"/>
                         <path id="Path_129" data-name="Path 129" d="M1036.748,383.719a.9.9,0,0,0,0,1.277l3.877,3.877h-9.561a.9.9,0,0,0,0,1.806h9.561l-3.877,3.877a.9.9,0,1,0,1.277,1.277l5.419-5.419a.9.9,0,0,0,0-1.277l-5.419-5.419a.9.9,0,0,0-1.277,0Z" transform="translate(-319.853 -245.899)" fill="#fff"/>
@@ -407,11 +408,16 @@ function App() {
                         <path id="Path_147" data-name="Path 147" d="M942.812,505.365a2.312,2.312,0,0,0,0-4.625H895.9a2.312,2.312,0,1,0,0,4.625Z" transform="translate(-288.707 -272.648)" fill="#fff"/>
                         <path id="Path_148" data-name="Path 148" d="M922.67,450.758a14.555,14.555,0,1,1-14.555,14.555A14.555,14.555,0,0,1,922.67,450.758Z" transform="translate(-292.019 -261.249)" fill="#fff"/>
                       </g>
+                      <g class="design-box"  id="Group_3" data-name="Group 3" transform="translate(0 -2772.437)">
+                        <g transform="matrix(1, 0, 0, 1, 140, 4706.08)" filter="url(#Rectangle_19)">
+                          <rect id="Rectangle_19-2" data-name="Rectangle 19" width="522" height="127" rx="4" transform="translate(284 424.92)" fill="#fff"/>
+                        </g>
+                      </g>
                     </g>
                   </svg>
 
                   </div>
-              </Parallax>
+            
             </div>
             <div className="design__right">
               <div className="process-heading">
@@ -438,28 +444,27 @@ function App() {
           <div className="process development" data-aos="flip-up" >
             <div className="development__left">
               <div className="process-heading">
-              <Parallax y={[50,-50]}>
+              {/* <Parallax y={[50,-50]}> */}
                   Development
                   <span className="process-heading__dot">.</span>
-              </Parallax>
+              {/* </Parallax> */}
               
-              <Parallax y={[30,-40]}>
+              {/* <Parallax y={[30,-40]}> */}
                   <div className="services">
                     <p className="service">React </p>
                     <p className="service">Node.js</p>
                     <p className="service">Firebase</p>
                     <p className="service">Rest API</p>
                   </div>
-              </Parallax>
-              <Parallax y={[50,-50]}>
+              {/* </Parallax>
+              <Parallax y={[50,-50]}> */}
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad voluptas aspernatur ullam dolor leniti  maiores tempora sint, at,laboriosam accusantium!</p>
-              </Parallax>
+              {/* </Parallax> */}
               </div>
               </div>
             <div className="development__right">
-              <Parallax y={[60,0]}>
                 <div className="process-image">
-                <svg xmlns="http://www.w3.org/2000/svg" width="872.417" height="691.528" viewBox="0 0 872.417 691.528">
+                <svg xmlns="http://www.w3.org/2000/svg" width="872.417" height="872.417" viewBox="0 0 872.417 691.528">
                   <defs>
                     <filter id="Rectangle_26" x="57.417" y="270.528" width="567" height="421" filterUnits="userSpaceOnUse">
                       <feOffset dy="3" input="SourceAlpha"/>
@@ -485,10 +490,10 @@ function App() {
                     <g class="rectangle_26-2" transform="matrix(1, 0, 0, 1, 82.58, 3674.04)" filter="url(#Rectangle_26)">
                       <rect id="Rectangle_26-2" data-name="Rectangle 26" width="549" height="403" rx="4" transform="translate(66.42 276.53)" fill="#051722" opacity="0.2"/>
                     </g>
-                    <g transform="matrix(1, 0, 0, 1, 82.58, 3674.04)" filter="url(#Rectangle_27)">
+                    <g  class="development-box" transform="matrix(1, 0, 0, 1, 82.58, 3674.04)" filter="url(#Rectangle_27)">
                       <rect id="Rectangle_27-2" data-name="Rectangle 27" width="522" height="127" rx="4" transform="translate(341.42 486.53)" fill="#051722"/>
                     </g>
-                    <g id="undraw_programming_2svr" transform="translate(82.572 3674.001)">
+                    <g class="development-1" id="undraw_programming_2svr" transform="translate(82.572 3674.001)">
                       <path id="Path_149" data-name="Path 149" d="M791.643,497.561q-1.289,2.778-2.571,5.482-2,4.2-3.949,8.238c-.578,1.193-1.156,2.363-1.719,3.534-6.371,13.016-12.32,24.529-17.373,34a54.237,54.237,0,0,1-47.273,28.67l-112.348,1.222h-1.185l-9.631.1-8.238.089-25.263.274h-1.022l-12.861.141h-.393l-79.27.859-70.757.741-8.231.089-51.118.556h-.059l-33.152.356h-.356l-104.829,1.133-31.36.341a65.243,65.243,0,0,1-19.758-2.83,64,64,0,0,1-28.959-18.336,148.124,148.124,0,0,1-29.878-50.94q-1.43-4.067-2.667-8.238c-22.825-77.158,5-176.7,55.081-243.321q3.149-4.178,6.4-8.149l.052-.059c15.4-18.906,32.671-34.7,51.066-45.932,32.6-19.936,68.713-25.551,104.236-8.816,30.056,14.165,58.119,20.825,85.322,22.633,2.749.178,5.5.311,8.231.393,62.4,1.963,120.882-20.521,189.558-35.034,2.734-.578,5.475-1.148,8.238-1.689,48.992-9.749,103.339-14.891,167.97-4.082a140.085,140.085,0,0,1,19.825,4.741q4.275,1.378,8.238,2.963c30.849,12.55,47.673,35.738,54.822,64.794q1.015,4.045,1.756,8.231C860.9,329.606,823.773,428.745,791.643,497.561Z" transform="translate(-79.34 -172.91)" fill="#8a8a8a" opacity="0.1"/>
                       <g id="Group_24" data-name="Group 24" transform="translate(8.085 10.136)" opacity="0.1">
                         <path id="Path_150" data-name="Path 150" d="M224.358,217V594.546l-31.36.341a65.247,65.247,0,0,1-19.758-2.83V262.932h.052C188.694,244,205.963,228.209,224.358,217Z" transform="translate(-111.758 -194.464)" fill="#8a8a8a"/>
@@ -888,13 +893,15 @@ function App() {
                 </svg>
 
                 </div>
-              </Parallax>
+              
             </div>
           </div>
           
           </section>
         <section className="quick-intro">
-          <Parallax y={[-80,40]}><div className="quick-intro__head"> &lt;/&gt;</div></Parallax>
+          {/* <Parallax y={[-80,40]}> */}
+          <div className="quick-intro__head"> &lt;/&gt;</div>
+          {/* </Parallax> */}
           <div className="quick-intro__body">
             <div className="quick-intro__body__left"></div>
             <div className="quick-intro__body__right">
@@ -909,67 +916,90 @@ function App() {
                 <div className="social"></div>
                 <div className="social"></div>
               </div>
-              <div className="email-cta">
+              <div className="cta-wrap">
+                <div className="email-cta">
                 <div className="icon"></div>
-                <div className="email-address">abhaykvincent@gmail.com</div>
+                <div className="email-address" onClick={() => {
+                  navigator.clipboard.writeText('abhaykvincent@gmail.com');
+                  setNotification('show')
+                  setTimeout(() => {
+                    setNotification('')
+                }, 1000);
+                  }}>abhaykvincent@gmail.com</div>
+              </div>
+                <div className="copy-icon"></div>
               </div>
             </div>
           </div>
-          <Parallax y={[40,-40]}><div className="quick-intro__animation"></div></Parallax>
+          {/* <Parallax y={[40,-40]}><div className="quick-intro__animation"></div></Parallax> */}
 
           </section>
         <section className="technologies">
         <div className="technologies__body">
         <Parallax x={[10, -10]}>
           <div className="strip">
-            <div className="tech">Some Technolo</div>
-            <div className="tech">Some </div>
+            <div className="tech">Angular JS</div>
+            <div className="tech">HTML</div>
+            <div className="tech">Babel</div>
             <div className="tech">Some Tech</div>
-            <div className="tech">Some Technolo</div>
-            <div className="tech">Some Tech</div>
-            <div className="tech">Some </div>
-            <div className="tech">Some Technolo</div>
-            <div className="tech">Some Tech</div>
-            <div className="tech">Some Technolo</div>
+            <div className="tech">Webpack</div>
+            <div className="tech">Vue JS </div>
+            <div className="tech">Python</div>
+            <div className="tech">React NativeJS</div>
+            <div className="tech">Redux</div>
+            <div className="tech">SCSS</div>
+            <div className="tech">Angular JS</div>
+            <div className="tech">HTML</div>
+            <div className="tech">Babel</div>
             <div className="tech">Some Tech</div>
           </div>
         </Parallax>
         <Parallax x={[10, -30]}>
           <div className="strip">
-            <div className="tech">Some Tech</div>
-            <div className="tech">Some Technolo</div>
-            <div className="tech">Some Tech</div>
-            <div className="tech">Some </div>
-            <div className="tech">Some Technolo</div>
-            <div className="tech">Some Tech</div>
-            <div className="tech">Some Technolo</div>
-            <div className="tech">Some Tech</div>
-            <div className="tech">Some Technolo</div>
-            <div className="tech">Some </div>vw
+            <div className="tech">Regex</div>
+            <div className="tech">D3</div>
+            <div className="tech">Tailwind</div>
+            <div className="tech">Mysql</div>
+            <div className="tech">PHP</div>
+            <div className="tech">jQuery</div>
+            <div className="tech">Material CSS</div>
+            <div className="tech">scss</div>
+            <div className="tech">Responsive Web</div>
+            <div className="tech">SVG</div>
+            <div className="tech">Regex</div>
+            <div className="tech">D3</div>
+            <div className="tech">Tailwind</div>
           </div>
         </Parallax>
         <Parallax x={[10, -70]}>
           <div className="strip">
-            <div className="tech">Some Tech</div>
-            <div className="tech">Some Technolo</div>
+            <div className="tech">3D for web</div>
+            <div className="tech">eCommerce</div>
+            <div className="tech">GIT </div>
+            <div className="tech">Bootstrap</div>
+            <div className="tech">Foundation</div>
+            <div className="tech">SCSS</div>
             <div className="tech">Some </div>
-            <div className="tech">Some Tech</div>
-            <div className="tech">Some Technolo</div>
-            <div className="tech">Some Tech</div>
+            <div className="tech">Wordpress</div>
+            <div className="tech">Wix</div>
+            <div className="tech">NPM Scripts</div>
+            <div className="tech">3D for web</div>
+            <div className="tech">eCommerce</div>
+            <div className="tech">GIT </div>
+            <div className="tech">Foundation</div>
+            <div className="tech">SCSS</div>
             <div className="tech">Some </div>
-            <div className="tech">Some Technolo</div>
-            <div className="tech">Some Tech</div>
-            <div className="tech">Some Technolo</div>
+            <div className="tech">Wordpress</div>
           </div>
         </Parallax>
         </div>
           </section>
         <section className="case-study-projects">
-          <Parallax y={[-100,30]} className="head__scroll-outer"><div className="case-study-projects__head">Case study & Projects</div></Parallax>
+        <Parallax y={[0,0]} className="head__scroll-outer"><div className="case-study-projects__head">Projects</div></Parallax>
           <div className="case-study-projects__body">
             <div className="projects">
 
-              <div className="project odd" data-aos="flip-up">
+              <div className="project odd" data-aos="flip-up" >
               <div className="project-display"></div>
                 <div className="project-head">
 
@@ -997,7 +1027,7 @@ function App() {
                 
                 </div>
                 <div className="project-body">
-                  <Parallax y={[60, -60]} className="body__scroll-outer">
+                  <Parallax y={[20, -20]} className="body__scroll-outer">
                     <div className="project-body__scroll">
                       <div className="view-project">
                         <svg xmlns="http://www.w3.org/2000/svg" width="315.264" height="65.354" viewBox="0 0 315.264 65.354">
@@ -1086,13 +1116,12 @@ function App() {
               </div>
           </div>
         </section>
-        <section className="illustrations">
-          
-        <Parallax y={[-80,40]} className="head__scroll-outer"><div className="illustrations__head">Illustrations</div></Parallax>
-        <div className="illustrations__body">
-          
-        <div className="art-strip">
-        <Parallax x={[10, -100]}>
+        <section className="illustrations"> 
+          <Parallax y={[0,0]} className="head__scroll-outer"><div className="illustrations__head">Illustrations</div></Parallax>
+          <div className="illustrations__body">
+            
+          <div className="art-strip">
+          <Parallax x={[10, -100]}>
             <div className="block"></div>
             {/* <div className="block">2</div>
             <div className="block">3</div>
@@ -1102,10 +1131,9 @@ function App() {
           </div>
         </div>
         </section>
-        
         {/* Frequency Asked  Questions */}
         <section className="faq">
-          <Parallax y={[-80,60]} className="head__scroll-outer"><div className="faq__head">Frequently Asked Questions</div></Parallax>
+          <Parallax y={[0,0]} className="head__scroll-outer"><div className="faq__head">Frequently Asked Questions</div></Parallax>
           <div className="faq__body">
             <div className="faq__questions">
               <div className="question-answer">
@@ -1175,63 +1203,4 @@ export default App;
 
 // Original referance [ REF-1 ]
 // Can  input inside  REF-1 
-
-
-{/* <section className="timeline">
-
-        <Parallax y={[-100,100]} className="head__scroll-outer"><div className="timeline__head">Timeline</div></Parallax>
-          <div className="timeline-cards">
-                
-                <Parallax y={[-60, 60]} className="arrow-1">
-                  <div className="card end"
-                  data-aos="flip-up"
-                  data-aos-offset="10"
-                  data-aos-delay="10"
-                  data-aos-duration="500"
-                  data-aos-easing="ease-out"
-                  ></div>
-                </Parallax>
-              
-              <Parallax y={[-100, 100]} className="arrow-1">
-                  <div className="card"
-                  data-aos="flip-up"
-                  data-aos-offset="10"
-                  data-aos-delay="200"
-                  data-aos-duration="500"
-                  data-aos-easing="ease-out"
-                  ></div>
-                </Parallax>
-                <Parallax y={[0, 10]} className="arrow-1">
-                  <div className="card center"
-                    data-aos="flip-up"
-                    data-aos-offset="10"
-                    data-aos-delay="150"
-                    data-aos-duration="500"
-                    data-aos-easing="ease-out"
-                    >
-                  </div>
-                </Parallax>
-            
-                <Parallax y={[-110, 110]} className="arrow-1">
-                  <div className="card"
-                  data-aos="flip-up"
-                  data-aos-offset="10"
-                  data-aos-delay="200"
-                  data-aos-duration="500"
-                  data-aos-easing="ease-out"
-                  ></div>
-                </Parallax>
-
-                
-                <Parallax y={[-60, 60]} className="arrow-1">
-                  <div className="card end"
-                  data-aos="flip-up"
-                  data-aos-offset="10"
-                  data-aos-delay="10"
-                  data-aos-duration="500"
-                  data-aos-easing="ease-out"
-                  ></div>
-                </Parallax>
-          </div>
-        </section>*/}
 
