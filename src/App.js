@@ -97,8 +97,7 @@ function App() {
               </div>
           </div>
           <div className="first-impression__right">
-          {/* <iframe src='https://my.spline.design/untitled-ee5cb40f77a7d49646a16952e70808c8/' frameborder='0' width='100%' height='100%'></iframe>
-          */}</div>
+          <iframe src='https://my.spline.design/hero0-f391348280434b35dc636c10854d8c29/' frameborder='0' width='100%' height='100%'></iframe></div>
           </section>
         <section className="first-imagery-impression">
           <div className="image-background-layer"></div>
@@ -1000,7 +999,9 @@ function App() {
             <div className="projects">
 
               <div className="project odd" data-aos="flip-up" >
-              <div className="project-display"></div>
+              <div className="project-display">
+              <iframe src='https://my.spline.design/untitled-a5baef81d2162d928d8e92daa35d2237q/' frameborder='0' width='50%' height='100%'></iframe>
+              </div>
                 <div className="project-head">
 
                   <Parallax y={[-30, 15]} className="head__scroll-outer">
@@ -1010,39 +1011,21 @@ function App() {
 
                   <Parallax y={[15, -5]} className="head__project-details">
                     <div className="head__project-detail">
-                      <div className="project-title"> Monalisa Studio</div><span className="dot">
-
-                        <div className="dot-orange"
-                              data-aos="flip-up"
-                              ></div>
-
+                      <div className="project-title"> Jingle for Spotify</div>
+                      <span className="dot">
+                        <div className="dot-orange" data-aos="flip-up"></div>
                       </span>
                     </div>
-                  <div className="project-description">
+                    <div className="project-description">
                     <Parallax y={[-90,20]}><p >Small Buisness Website</p></Parallax>
                     <Parallax y={[-50,20]}><p >A website for wedding and event photography studio based in kochi.</p></Parallax>
                   </div>
-                    
+                    <div className="button">
+                    <div className=""></div>
+                    <div className="">View project</div>
+                  </div>
                   </Parallax>
                 
-                </div>
-                <div className="project-body">
-                  <Parallax y={[20, -20]} className="body__scroll-outer">
-                    <div className="project-body__scroll">
-                      <div className="view-project">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="315.264" height="65.354" viewBox="0 0 315.264 65.354">
-                          <g id="Group_143" data-name="Group 143" transform="translate(-1152 -6940.962)">
-                            <text id="View_Project_" data-name="View Project   " transform="translate(1152 6987.64)" fill="#ef9e4b" font-size="40" font-family="ProductSans-Regular, Product Sans"><tspan x="0" y="0" >View Project   </tspan></text>
-                            <g id="Path_317" data-name="Path 317" transform="translate(1403.26 6930.104)" fill="none">
-                              <path d="M35.662,10.859C55.357,10.859,64,26.12,64,45.815S56.781,78.65,35.662,75.834,0,59.868,0,40.172,15.966,10.859,35.662,10.859Z" stroke="none"/>
-                              <path d="M 35.66162872314453 12.85894012451172 C 30.87342071533203 12.85894012451172 26.38665390014648 13.44258880615234 22.32596588134766 14.59367370605469 C 18.21155166625977 15.75998687744141 14.61937713623047 17.48698425292969 11.64920806884766 19.72670745849609 C 8.587375640869141 22.03555297851562 6.214786529541016 24.87471771240234 4.597366333007812 28.16530990600586 C 2.873874664306641 31.67167663574219 1.999996185302734 35.71138763427734 1.999996185302734 40.1722526550293 C 1.999996185302734 44.72755432128906 2.8233642578125 49.00482940673828 4.447231292724609 52.88527679443359 C 6.013519287109375 56.62810897827148 8.320930480957031 59.99715423583984 11.30537414550781 62.89880752563477 C 17.2862548828125 68.71379852294922 25.79991912841797 72.50115203857422 35.92598724365234 73.85143280029297 C 37.72714233398438 74.09162139892578 39.45732879638672 74.21339416503906 41.06846618652344 74.21339416503906 C 44.87948608398438 74.21339416503906 48.19532012939453 73.53194427490234 50.92388534545898 72.18795013427734 C 53.46273040771484 70.93740844726562 55.58710861206055 69.06146240234375 57.23802185058594 66.61222839355469 C 60.40010833740234 61.92106628417969 62.00342178344727 54.92387390136719 62.00342178344727 45.81501007080078 C 62.00342178344727 36.00522994995117 59.79190826416016 27.81761932373047 55.60796356201172 22.13732147216797 C 51.0731315612793 15.98064422607422 44.36222076416016 12.85894012451172 35.66162872314453 12.85894012451172 M 35.66162872314453 10.85894012451172 C 55.35699844360352 10.85894012451172 64.00341796875 26.11962890625 64.00341796875 45.81501007080078 C 64.00341796875 63.72405242919922 58.02982330322266 76.21339416503906 41.06845855712891 76.21339416503906 C 39.37664794921875 76.21339416503906 37.57708740234375 76.08930969238281 35.66162872314453 75.83388519287109 C 14.54263305664062 73.01773071289062 0 59.86761856079102 0 40.1722526550293 C 0 20.47688293457031 15.96625518798828 10.85894012451172 35.66162872314453 10.85894012451172 Z" stroke="none" fill="#ffad58"/>
-                            </g>
-                            <path id="ic_keyboard_arrow_right_24px" d="M8.59,30.46,19.277,19.75,8.59,9.04l3.29-3.29,14,14-14,14Z" transform="translate(1421.027 6953.89)" fill="#ef9e4b"/>
-                          </g>
-                        </svg>
-                      </div>
-                    </div>
-                  </Parallax>
                 </div>
               </div>
 
@@ -1057,7 +1040,7 @@ function App() {
 
                   <Parallax y={[15, -5]} className="head__project-details">
                     <div className="head__project-detail">
-                      <div className="project-title"> Apeiro Movies </div><span className="dot">
+                      <div className="project-title"> Pre-screening App</div><span className="dot">
 
                         <div className="dot-orange"
                               data-aos="flip-up"
@@ -1066,18 +1049,17 @@ function App() {
                       </span>
                     </div>
                   <div className="project-description">
-                    <Parallax y={[-90,20]}><p >UI/UX Design</p></Parallax>
+                    <Parallax y={[-90,20]}><p >Lakeridge Health</p></Parallax>
                     <Parallax y={[-50,20]}><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
                   </div>
-                    
+                  <div className="button">
+                    <div className=""></div>
+                    <div className="">View project</div>
+                  </div>
                   </Parallax>
                 
                 </div>
-                <div className="project-body">
-                  <Parallax y={[60, -60]} className="body__scroll-outer">
-                    <div className="project-body__scroll"></div>
-                  </Parallax>
-                </div>
+                
               </div>
               
               <div className="project odd" data-aos="flip-up">
@@ -1091,7 +1073,35 @@ function App() {
 
                   <Parallax y={[15, -5]} className="head__project-details">
                     <div className="head__project-detail">
-                      <div className="project-title"> Apeiro Movies </div><span className="dot">
+                      <div className="project-title">Netflix </div>
+                      <span className="dot">
+                        <div className="dot-orange" data-aos="flip-up"></div>
+                      </span>
+                    </div>
+                  <div className="project-description">
+                    <Parallax y={[-90,20]}><p >UI/UX Design  Hpme Page</p></Parallax>
+                    <Parallax y={[-50,20]}><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
+                  </div>
+                  <div className="button">
+                    <div className=""></div>
+                    <div className="">View project</div>
+                  </div>
+                  </Parallax>
+                
+                </div>
+                </div>
+                <div className="project even"  data-aos="flip-up">
+                <div className="project-display"></div>
+                <div className="project-head">
+
+                  <Parallax y={[-30, 15]} className="head__scroll-outer">
+                    <div className="project-head__scroll">
+                    </div>
+                  </Parallax>
+
+                  <Parallax y={[15, -5]} className="head__project-details">
+                    <div className="head__project-detail">
+                      <div className="project-title"> Easy Groceries</div><span className="dot">
 
                         <div className="dot-orange"
                               data-aos="flip-up"
@@ -1103,16 +1113,45 @@ function App() {
                     <Parallax y={[-90,20]}><p >UI/UX Design</p></Parallax>
                     <Parallax y={[-50,20]}><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
                   </div>
-                    
+                  <div className="button">
+                    <div className=""></div>
+                    <div className="">View project</div>
+                  </div>
                   </Parallax>
                 
                 </div>
-                <div className="project-body">
-                  <Parallax y={[60, -60]} className="body__scroll-outer">
-                    <div className="project-body__scroll"></div>
-                  </Parallax>
-                </div>
+                
               </div>
+              
+              <div className="project odd" data-aos="flip-up">
+              <div className="project-display"></div>
+                <div className="project-head">
+
+                  <Parallax y={[-30, 15]} className="head__scroll-outer">
+                    <div className="project-head__scroll">
+                    </div>
+                  </Parallax>
+
+                  <Parallax y={[15, -5]} className="head__project-details">
+                    <div className="head__project-detail">
+                      <div className="project-title"> Web Infographics </div>
+                      <span className="dot">
+                        <div className="dot-orange" data-aos="flip-up"></div>
+                      </span>
+                    </div>
+                  <div className="project-description">
+                    <Parallax y={[-90,20]}><p >UI/UX Design</p></Parallax>
+                    <Parallax y={[-50,20]}><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
+                  </div>
+                  <div className="button">
+                    <div className=""></div>
+                    <div className="">View project</div>
+                  </div>
+                  </Parallax>
+                
+                </div>
+                </div>
+              
               </div>
           </div>
         </section>
@@ -1168,10 +1207,19 @@ function App() {
             <p>I’ll Make it easy for you… This is how to pronounce my name - Abhay</p>
             <p>I would love to here from you?</p>
           </div>
-          <div className="email-cta">
+          
+          <div className="cta-wrap">
+                <div className="email-cta">
                 <div className="icon"></div>
-                <div className="email-address">abhaykvincent@gmail.com</div>
-          </div>
+                <div className="email-address" onClick={() => {
+                  navigator.clipboard.writeText('abhaykvincent@gmail.com');
+                  setNotification('show')
+                  setTimeout(() => {
+                    setNotification('')
+                }, 1000);
+                  }}>abhaykvincent@gmail.com</div>
+              </div>
+              </div>
           <div className="cta-social social-links">
                 <div className="social"></div>
                 <div className="social"></div>
@@ -1181,10 +1229,16 @@ function App() {
           </section>
         
         {/* Footer */}
-        <footer>
-          <div className="footer-quote">
-            <div className="name">Lorem, ipsum.</div>
-            <div className="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, et?</div>
+        <footer><div className="footer-quote">
+          <div className="love">
+            Made with love
+          </div>
+          
+            <div className="copy">Copyright 2021 Abhay Vincent</div>
+            <div className="legal">
+              <div className="terms-conditions">Terms and  conditions</div>
+              <div className="terms-conditions">Sitemap</div>
+            </div>
           </div>
         </footer>
 
