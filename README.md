@@ -12,8 +12,7 @@
 2. Project -  on call animation - button            🥕      📌📌
 2. Project - Intractive 3D            🥕      📌
 2. footer           🥕      📌
-2. footer           🥕      📌
-2.            🥕      📌
+2. First Impression - Image Strip - Images          🥕      📌
 
 
     check projects outline for portfolio XD
