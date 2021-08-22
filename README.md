@@ -13,6 +13,7 @@
 2. Project - Intractive 3D            🥕      📌
 2. footer           🥕      📌
 2. First Impression - Image Strip - Images          🥕      📌
+2. Illustration - Image Strip          🥕      📌
 
 
     check projects outline for portfolio XD
