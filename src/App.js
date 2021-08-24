@@ -118,7 +118,7 @@ function App() {
           {/* Processes */}
           
           {/* Strategy */}
-          <div className="process strategy" data-aos="flip-up">
+          <div className="process strategy" data-aos="flip-up" data-aos-anchor-placement="top-center">
             <div className="strategy__left">
               <div className="process-heading">
                 <Parallax y={[-10,-40]}>
@@ -436,7 +436,7 @@ function App() {
               </div>
           </div>
           {/* Development */}
-          <div className="process development" data-aos="flip-up" >
+          <div className="process development" data-aos="flip-up"  data-aos-anchor-placement="top-center">
             <div className="development__left">
               <div className="process-heading">
               <Parallax y={[-10,-60]}>
