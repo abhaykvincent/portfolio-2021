@@ -290,7 +290,7 @@ function App() {
                </div>
           </div>
           {/* Design */}
-          <div className="process design"  data-aos="flip-up" data-aos-delay="0.8s">
+          <div className="process design"  data-aos="flip-up" data-aos-anchor-placement="top-center">
             <div className="design__left">
                   <div className="process-image">
                   <svg xmlns="http://www.w3.org/2000/svg"  width="815" height="629.924" viewBox="0 0 815 629.924">
