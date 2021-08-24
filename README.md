@@ -8,12 +8,11 @@
 ## TODO
 
 1. Fiirst Impression -  Intractive 3d Hero          🥕      📌
-1. Technologies - scroll needs fix - word wrap      🥕      📌
-2. Project -  on call animation - button            🥕      📌📌
-2. Project - Intractive 3D            🥕      📌
-2. Footer           🥕      📌
-2. First Impression - Image Strip - Images          🥕      📌
-2. Illustration - Image Strip          🥕      📌
-
+2. Technologies - scroll needs fix - word wrap      🥕      📌
+3. Project -  on call animation - button            🥕      📌📌
+4. Project - Intractive 3D            🥕      📌
+5. Footer           🥕      📌
+6. First Impression - Image Strip - Images          🥕      📌
+7. Illustration - Image Strip          🥕      📌
 
     check projects outline for portfolio XD

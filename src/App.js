@@ -32,7 +32,7 @@ AOS.init({
   easing: 'ease', // default easing for AOS animations
   once: false, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  anchorPlacement:'center-center', // defines which position of the element regarding to window should trigger the animation
 
 });
 
@@ -121,17 +121,15 @@ function App() {
           <div className="process strategy" data-aos="flip-up">
             <div className="strategy__left">
               <div className="process-heading">
-                <Parallax y={[30,-50]}>
+                <Parallax y={[-10,-40]}>
                   Strategy
                   <span className="process-heading__dot">.</span>
-                </Parallax>
-                <Parallax y={[30,-50]}>
                   <div className="services">
                     <p className="service">Web Design Strategy</p>
                     <p className="service">UI/UX Research</p>
                   </div>
                 </Parallax>
-                <Parallax y={[30,-30]}>
+                <Parallax y={[-10,0]}>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad voluptas aspernatur ullam dolor leniti  maiores tempora sint, at,laboriosam accusantium!</p>
                 </Parallax>
                 </div>
@@ -421,7 +419,7 @@ function App() {
             </div>
             <div className="design__right">
               <div className="process-heading">
-                <Parallax y={[-10,-25\]}>
+                <Parallax y={[-10,-60]}>
                   Design
                   <span className="process-heading__dot">.</span>
                   <div className="services">
@@ -431,7 +429,7 @@ function App() {
                     <p className="service">Illustrations</p>
                   </div>
                 </Parallax>
-                <Parallax y={[-10,0]}>
+                <Parallax y={[-10,-20]}>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad voluptas aspernatur ullam dolor leniti  maiores tempora sint, at,laboriosam accusantium!</p>
                 </Parallax>
                 </div>
@@ -441,22 +439,19 @@ function App() {
           <div className="process development" data-aos="flip-up" >
             <div className="development__left">
               <div className="process-heading">
-              {/* <Parallax y={[50,-50]}> */}
+              <Parallax y={[-10,-60]}>
                   Development
                   <span className="process-heading__dot">.</span>
-              {/* </Parallax> */}
-              
-              {/* <Parallax y={[30,-40]}> */}
                   <div className="services">
                     <p className="service">React </p>
                     <p className="service">Node.js</p>
                     <p className="service">Firebase</p>
                     <p className="service">Rest API</p>
                   </div>
-              {/* </Parallax>
-              <Parallax y={[50,-50]}> */}
+              </Parallax>
+              <Parallax y={[-10,-20]}>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad voluptas aspernatur ullam dolor leniti  maiores tempora sint, at,laboriosam accusantium!</p>
-              {/* </Parallax> */}
+              </Parallax>
               </div>
               </div>
             <div className="development__right">
