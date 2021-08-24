@@ -15,4 +15,4 @@
 6. First Impression - Image Strip - Images          🥕      📌
 7. Illustration - Image Strip          🥕      📌
 
-    check projects outline for portfolio XD
+    check projects outline for portfolio XD.
