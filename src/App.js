@@ -21,7 +21,7 @@ AOS.init({
   animatedClassName: 'aos-animate', // class applied on animation
   useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
   disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  debounceDelay: 0, // the delay on debounce used while resizing window (advanced)
   throttleDelay: 100, // the delay on throttle used while scrolling the page (advanced)
   
 
@@ -97,7 +97,8 @@ function App() {
               </div>
           </div>
           <div className="first-impression__right">
-          <iframe src='https://my.spline.design/hero0-f391348280434b35dc636c10854d8c29/' frameborder='0' width='100%' height='100%'></iframe></div>
+          {/*   <iframe src='https://my.spline.design/hero0-f391348280434b35dc636c10854d8c29/' frameborder='0' width='100%' height='100%'></iframe> */}
+          </div>
           </section>
         <section className="first-imagery-impression">
           <div className="image-background-layer"></div>
@@ -420,12 +421,9 @@ function App() {
             </div>
             <div className="design__right">
               <div className="process-heading">
-                <Parallax y={[30,-50]}>
+                <Parallax y={[-10,-25\]}>
                   Design
                   <span className="process-heading__dot">.</span>
-                </Parallax>
-                
-                <Parallax y={[30,-50]}>
                   <div className="services">
                     <p className="service">Wireframing</p>
                     <p className="service">Prototype</p>
@@ -433,7 +431,7 @@ function App() {
                     <p className="service">Illustrations</p>
                   </div>
                 </Parallax>
-                <Parallax y={[30,-30]}>
+                <Parallax y={[-10,0]}>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad voluptas aspernatur ullam dolor leniti  maiores tempora sint, at,laboriosam accusantium!</p>
                 </Parallax>
                 </div>
@@ -1160,7 +1158,7 @@ function App() {
           <div className="illustrations__body">
             
           <div className="art-strip">
-          <Parallax x={[10, -100]}>
+          <Parallax x={[10, 0]}>
             <div className="block"></div>
             {/* <div className="block">2</div>
             <div className="block">3</div>

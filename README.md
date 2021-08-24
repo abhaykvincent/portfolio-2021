@@ -11,7 +11,7 @@
 1. Technologies - scroll needs fix - word wrap      🥕      📌
 2. Project -  on call animation - button            🥕      📌📌
 2. Project - Intractive 3D            🥕      📌
-2. footer           🥕      📌
+2. Footer           🥕      📌
 2. First Impression - Image Strip - Images          🥕      📌
 2. Illustration - Image Strip          🥕      📌
 
