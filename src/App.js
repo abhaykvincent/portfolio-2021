@@ -32,7 +32,7 @@ AOS.init({
   easing: 'ease', // default easing for AOS animations
   once: false, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement:'center-center', // defines which position of the element regarding to window should trigger the animation
+  anchorPlacement:'bottom-center', // defines which position of the element regarding to window should trigger the animation
 
 });
 
@@ -993,7 +993,7 @@ function App() {
 
               <div className="project odd" data-aos="flip-up" >
               <div className="project-display">
-              <iframe src='https://my.spline.design/untitled-a5baef81d2162d928d8e92daa35d2237q/' frameborder='0' width='50%' height='100%'></iframe>
+              {/* <iframe src='https://my.spline.design/untitled-a5baef81d2162d928d8e92daa35d2237q/' frameborder='0' width='50%' height='100%'></iframe> */}
               </div>
                 <div className="project-head">
 
@@ -1013,10 +1013,13 @@ function App() {
                     <Parallax y={[-90,20]}><p >Small Buisness Website</p></Parallax>
                     <Parallax y={[-50,20]}><p >A website for wedding and event photography studio based in kochi.</p></Parallax>
                   </div>
+
+                  <a href="https://netflix-home-ui.web.app/" target="_blank">
                     <div className="button">
-                    <div className=""></div>
-                    <div className="">View project</div>
-                  </div>
+                      <div className="">View project</div>
+                      <div className="icon"></div>
+                    </div>
+                  </a>
                   </Parallax>
                 
                 </div>
@@ -1045,10 +1048,13 @@ function App() {
                     <Parallax y={[-90,20]}><p >Lakeridge Health</p></Parallax>
                     <Parallax y={[-50,20]}><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
                   </div>
-                  <div className="button">
-                    <div className=""></div>
-                    <div className="">View project</div>
-                  </div>
+                  <a href="https://lakeridge-clinical-trial.web.app/" target="_blank">
+                    <div className="button">
+                      <div className="">View project</div>
+                      <div className="icon"></div>
+                    </div>
+                  </a>
+                  
                   </Parallax>
                 
                 </div>
@@ -1075,10 +1081,14 @@ function App() {
                     <Parallax y={[-90,20]}><p >UI/UX Design  Hpme Page</p></Parallax>
                     <Parallax y={[-50,20]}><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
                   </div>
+
+                  <a href="https://netflix-home-ui.web.app/" target="_blank">
                   <div className="button">
-                    <div className=""></div>
                     <div className="">View project</div>
+                    <div className="icon"></div>
                   </div>
+                  </a>
+                  
                   </Parallax>
                 
                 </div>
@@ -1107,8 +1117,8 @@ function App() {
                     <Parallax y={[-50,20]}><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
                   </div>
                   <div className="button">
-                    <div className=""></div>
                     <div className="">View project</div>
+                    <div className="icon"></div>
                   </div>
                   </Parallax>
                 
@@ -1133,13 +1143,18 @@ function App() {
                       </span>
                     </div>
                   <div className="project-description">
-                    <Parallax y={[-90,20]}><p >UI/UX Design</p></Parallax>
-                    <Parallax y={[-50,20]}><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
+                    <Parallax y={[-90,20]}><p >Intractive </p><p >Infographics </p><p >Vanilla JS </p></Parallax>
+                    <Parallax y={[-50,20]}>
+                      <p style={{opacity: 0.7}}>Voiceover🎙 : Sushant Saini</p>
+                      <p >A movie diary web app developed using React and runs on firebase</p></Parallax>
                   </div>
-                  <div className="button">
-                    <div className=""></div>
-                    <div className="">View project</div>
-                  </div>
+                  <a href="https://climate-change-infographics.web.app/" target="_blank">
+                    <div className="button">
+                      <div className="">View project</div>
+                      <div className="icon"></div>
+                    </div>
+                  </a>
+                  
                   </Parallax>
                 
                 </div>

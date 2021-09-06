@@ -112,6 +112,21 @@
 
         background-color: #051722;
         border-radius: 4px;
+        &:nth-child(3){
+          background-size: 100%;
+          background-position: center center;
+          background-image:url(./images/image-imprsson/001.JPG) ;
+        }
+        &:nth-child(1){
+          background-size: 100% auto;
+          background-position: center center;
+          background-image:url(./images/image-imprsson/002.JPG) ;
+        }
+        &:nth-child(2){
+          background-size: 100% auto;
+          background-image:url(./images/image-imprsson/003.JPG) ;
+          background-position: center;
+        }
         }
       }
     }
@@ -373,7 +388,7 @@
       padding: 0px 10vw;
       padding-bottom: 0vw;
       .quick-intro__head{
-        padding-bottom: 5vw;
+        padding-bottom: 10vw;
         text-align: center;
         color: #ffffff;
         font-size:5vw;
@@ -432,7 +447,7 @@
       position: relative;
       background-color: #fff7eacf;
       padding: 2vw 0px;
-      margin-top: 8px*10;
+      margin-top: 10vw;
       z-index: 25;
       /* transform: translateY(-15vw); */
       .technologies__body{
@@ -464,7 +479,7 @@
     &.case-study-projects{
       position: relative;
       margin-bottom: 5vw;
-      margin-top: 15vw;
+      margin-top: 10vw;
       z-index: 24;
       .head__scroll-outer{
         position: relative;
@@ -472,7 +487,7 @@
 
       }
       .case-study-projects__head{
-        padding-bottom: 8px * 10;
+        padding-bottom: 10vw;
         text-align: center;
         color: #ffffff;
         font-size:5vw;
@@ -486,8 +501,8 @@
         .projects{
           .project{
             position: relative;
-            margin-bottom: 30vw;
-            background-size: auto 90%;
+            margin-bottom: 10vw;
+            background-size: auto 80%  !important;
             background-repeat: no-repeat;
 
             &{
@@ -497,6 +512,20 @@
                 height: 80%;
               }
               .project-head{
+
+                .button{
+                  .icon{
+
+                    display:none;
+                    position:absolute;
+                    top: 0px;
+                    right: -60px;
+                    width:8px*5;height:8px*5;
+                    background-image: url('./images/icons/feather-play-circle-orange.png') !important;
+                    background-size: 80%;
+                  }
+                  
+                }
                 
                 .parallax-inner{
                   width: 100%;
@@ -597,6 +626,7 @@
                   width: 100%;
                   padding: 0px 4.5vw;
                   z-index: 25;
+                  background:rgba(255, 255, 255, 0.4);
 
                   font-size: 3vw;
                   font-weight: 900;
@@ -733,33 +763,80 @@
             }
             &:nth-child(1){
               z-index: 23;
-              background-color:#FFE2CB ;
+              background-color:#EDFFEE ;
+              background-image:url('../src/images/projects/jingle.svg') ;
+              background-position:center left 5%;
+              .button{
+                background-color: #2fbd35;
+                border: 1px solid #18881e;
+              }
+              .dot{
+                .dot-orange{
+                  background-color: #2fbd35 !important;
+                }
+              }
             }
             &:nth-child(2){
               z-index: 22;
-              background-color:#FFE2CB ;
-              //background-image:url('../src/images/projects/movies.png') ;
+              background-color:#DBF3FF ;
+              background-image:url('../src/images/projects/clinical-trial.svg') ;
               background-position:center right 5%;
+              .button{
+                background-color: #3da9d5;
+                border: 1px solid #2687ad;
+              }
+              .dot{
+                .dot-orange{
+                  background-color: #3da9d5 !important;
+                }
+              }
             }
             &:nth-child(3){
               z-index: 21;
-              background-color:#FFE2CB ;
-              //background-image:url('../src/images/projects/easy-groceries.svg') ;
+              background-color:#FFF2F2 ;
+              background-image:url('../src/images/projects/netflix.svg') ;
               background-position:center left 5%;
               background-size: auto 60%;
+              .button{
+                background-color: #e52d11;
+                border: 1px solid #b32009;
+              }
+              .dot{
+                .dot-orange{
+                  background-color: #e52d11 !important;
+                }
+              }
             }
             &:nth-child(4){
               z-index: 22;
-              background-color:#FFE2CB ;
-              //background-image:url('../src/images/projects/movies.png') ;
+              background-color:#EDFFEE ;
+              background-image:url('../src/images/projects/easy-groiceries.svg') ;
               background-position:center right 5%;
+              .button{
+                background-color: #34d23c;
+                border: 1px solid #1fa026;
+              }
+              .dot{
+                .dot-orange{
+                  background-color: #34d23c !important;
+                }
+              }
             }
             &:nth-child(5){
               z-index: 21;
-              background-color:#FFE2CB ;
-              //background-image:url('../src/images/projects/easy-groceries.svg') ;
+              background-color:#FDEAEF ;
+              background-image:url('../src/images/projects/infographics.svg') ;
               background-position:center left 5%;
               background-size: auto 60%;
+              .button{
+                background-color: #f52d57;
+                border: 1px solid #c02042;
+              }
+              .dot{
+                .dot-orange{
+                  background-color: #f52d57 !important;
+                }
+              }
             }
             .project-head{
             p{margin: 16px 0px;
@@ -794,20 +871,11 @@
 
                 transform: translateY(100px);
                 opacity: 0;
-                animation: project-name-reveal 0.4s;
+                animation: project-button-reveal 0.4s;
                 animation-delay: 1.2s;
                 animation-fill-mode: forwards;
               }
-              &.odd{
-                animation: project-hero-reveal-odd 1s;
-                animation-delay: 0.5s;
-                animation-fill-mode: forwards;
-              }
-              &.even{
-                animation: project-hero-reveal-even 1s;
-                animation-delay: 0.5s;
-                animation-fill-mode: forwards;
-              }
+              
             }
           }
         }
@@ -1070,7 +1138,7 @@
 
   }
   .cta-wrap{
-    display: grid;
+    display: flex;
     grid-auto-flow: column;
     align-items: start;
     .copy-icon{
@@ -1551,6 +1619,23 @@
   100%{
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+@keyframes project-button-reveal{
+  0%{
+    width:25px;
+    transform: translateY(40px) rotate(-2deg);
+    opacity: 0;
+    color:rgba(255, 255, 255, 0);
+  }
+  70%{
+    color:rgba(255, 255, 255, 0);
+  }
+  100%{
+    width:170px;
+    transform: translateY(0px);
+    opacity: 1;
+    color:rgb(255, 255, 255);
   }
 }
 @keyframes project-hero-reveal-even {
