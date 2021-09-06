@@ -12,4 +12,4 @@
 4. Project - Intractive 3D                          🥕      📌
 5. Footer                                           🥕      📌
 6. First Impression - Image Strip - Images          🥕      📌
-7. Illustration - Image Strip                       🥕      📌
+7. Illustration - Image 
