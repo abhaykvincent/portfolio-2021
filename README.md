@@ -14,5 +14,3 @@
 
 3. Project -  on call animation - button            🥕      📌📌
 
-
-6. First Impression - Image Strip - Images          🥕      📌
