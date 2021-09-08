@@ -18,4 +18,3 @@
 
 5. Footer                                           🥕      📌
 6. First Impression - Image Strip - Images          🥕      📌
-7. Illustration - Image Strip                       🥕      📌
