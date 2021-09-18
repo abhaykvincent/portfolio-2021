@@ -1,7 +1,5 @@
 # Symbols
 
-📌 - Priority ⏱
-💯 - Priority 💯
 
 ## TODO
 
