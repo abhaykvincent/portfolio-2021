@@ -2,6 +2,7 @@
 
 📌 - Priority ⏱
 💯 - Priority 💯
+🥕 - Need edit
 
 ## TODO
 
