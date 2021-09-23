@@ -1,6 +1,6 @@
 # Symbols
 
-📌 - Priority ⏱
+
 
 
 
