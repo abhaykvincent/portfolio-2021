@@ -14,7 +14,5 @@
 
 3. Project -  on call animation - button            🥕      📌📌
 
-4. Project - Intractive 3D                          🥕      📌
-
 
 
