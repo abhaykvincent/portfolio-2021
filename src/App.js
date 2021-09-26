@@ -22,17 +22,17 @@ AOS.init({
   useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
   disableMutationObserver: false, // disables automatic mutations' detections (advanced)
   debounceDelay: 0, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 100, // the delay on throttle used while scrolling the page (advanced)
+  throttleDelay: 50, // the delay on throttle used while scrolling the page (advanced)
   
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120, // offset (in px) from the original trigger point
+  offset: 0, // offset (in px) from the original trigger point
   delay: 0, // values from 0 to 3000, with step 50ms
   duration: 300, // values from 0 to 3000, with step 50ms
   easing: 'ease', // default easing for AOS animations
   once: false, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement:'bottom-center', // defines which position of the element regarding to window should trigger the animation
+  anchorPlacement:'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
 
@@ -118,7 +118,7 @@ function App() {
           {/* Processes */}
           
           {/* Strategy */}
-          <div className="process strategy" data-aos="flip-up" data-aos-anchor-placement="top-center">
+          <div className="process strategy" data-aos="flip-up" data-aos-anchor-placement="top-botto">
             <div className="strategy__left">
               <div className="process-heading">
                 <Parallax y={[-10,-40]}>
@@ -290,7 +290,7 @@ function App() {
                </div>
           </div>
           {/* Design */}
-          <div className="process design"  data-aos="flip-up" data-aos-anchor-placement="top-center">
+          <div className="process design"  data-aos="flip-up" data-aos-anchor-placement="top-bottom">
             <div className="design__left">
                   <div className="process-image">
                   <svg xmlns="http://www.w3.org/2000/svg"  width="815" height="629.924" viewBox="0 0 815 629.924">
@@ -436,7 +436,7 @@ function App() {
               </div>
           </div>
           {/* Development */}
-          <div className="process development" data-aos="flip-up"  data-aos-anchor-placement="top-center">
+          <div className="process development" data-aos="flip-up"  data-aos-anchor-placement="top-bottom">
             <div className="development__left">
               <div className="process-heading">
               <Parallax y={[-10,-60]}>
@@ -1179,7 +1179,7 @@ function App() {
         </div>
         </section>
         {/* Frequency Asked  Questions */}
-        <section className="faq">
+        {/* <section className="faq">
           <Parallax y={[0,0]} className="head__scroll-outer"><div className="faq__head">Frequently Asked Questions</div></Parallax>
           <div className="faq__body">
             <div className="faq__questions">
@@ -1207,7 +1207,7 @@ function App() {
             <div className="faq__image"></div>
           </div>
         </section>
-
+ */}
         {/* Call to action */}
         <section className="cta">
           <div className="end">

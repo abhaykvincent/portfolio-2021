@@ -1371,7 +1371,7 @@
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr ;
         grid-gap: 16px;
-        height: 100vh;
+        height: 150VW;
         width:100%;
         padding: 5vw;
         margin-top: -30vw;;
@@ -1556,7 +1556,8 @@
               margin-bottom: 80px  !important;
               grid-template-rows: 80vw  auto !important;
               grid-auto-flow: row;
-              background:rgba(238, 238, 238, 0) !important;
+              background-size: 150% !important;
+              background-position: top  !important;
               
               .project-head{
                 position:relative !important;
@@ -1594,7 +1595,6 @@
               }
               .project-display{
                 height: 80vw  !important;
-                background-color:#f7a500;
               }
             }
           }
