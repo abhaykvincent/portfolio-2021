@@ -397,21 +397,22 @@
       }
       .quick-intro__body{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 35vw auto;
         grid-column-gap:10vw;
         .quick-intro__body__left{
-          
-          background-image: url('../src/images/photos-abhay/Image01@2x.jpg');
-          background-size:140% ;
+          width: 35vw;
+          height: 50vw;
+          background-image: url('../src/images/quick-intro/intro-profile-bw.jpg');
+          background-size:100% ;
           background-repeat: no-repeat;
-          background-position: top;
+          background-position: center right;
           border-radius: 4px;
         }
         .quick-intro__body__right{
           .quick-intro__main{
             .head-text{
               width:100%;
-              font-size: 2rem;
+              font-size: 3rem;
             }
             .head-text-border{
               font-size: 4vw;
@@ -859,7 +860,7 @@
                 }
               }
               .project-description{
-                margin-top: 32px;
+                margin-top: 24px;
 
                 transform: translateY(100px);
                 opacity: 0;
@@ -948,8 +949,19 @@
           &.end{
             height: 25vw;
             width:15vw;
+            padding-top: 40px;
             background: rgba(109, 109, 109, 0.979);
             z-index: 1;
+          h1{
+            font-size: 2.5rem !important;
+            font-weight: 900;
+
+          }
+          p{
+
+    font-size: 1.5rem;
+    font-weight: 200;
+          }
           }
         }
       }
@@ -1015,6 +1027,7 @@
       padding: 40px;
       background:#fef7ed;
       .end{
+        padding-top: 40px;
         h1{
           font-size: 8px*7;
           margin-bottom: 8px*3;
@@ -1068,6 +1081,9 @@
     .footer-quote{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      .love{
+        font-size: 1.2rem;
+      }
       .copy{
         text-align: center;
       }
@@ -1339,7 +1355,7 @@
           height:auto;
           .quick-intro__body__left{
             width:100%;
-            height: 140vw;;
+            height: 100vw;;
           }
           .quick-intro__body__right{
             margin-top: 8px*5;
@@ -1414,7 +1430,7 @@
           grid-template-columns: 100% ;
           grid-template-rows: auto auto ;
           width: 100vw;
-          grid-row-gap: 20px;
+          grid-row-gap: 80px;
 
           &.design{
           }
@@ -1494,58 +1510,99 @@
       &.case-study-projects{
         .case-study-projects__head{
           
-          font-size: 2.5rem ;
+          font-size: 3rem ;
         }
         .case-study-projects__body{
           .projects{
             display: grid;
             width:100vw;
+            .project-head .head__project-details{
+              background:none !important;
+              .roles{
+                .role{
+                  font-size: 1rem;
+                }
+              }
+              .description{
+                margin-top: 40px;
+              }
+            }
             .project.aos-animate .button{
               margin-top: 32px;
             }
             .project:nth-child(1){
               &.odd{
-                height: 40em !important;
+                height: 52em !important;
 
               }
+              .project-head .head__project-details .role {
+                background-color: #e5fae5;
+                font-size: 1.2rem;
+                color: #1f9e26;
+                border: 1px solid #1f9e26;
+              }
               .project-head{
-                height: 40em !important;
+                height: 48em !important;
               }
             }
             .project:nth-child(2){
               &.even{
-                height: 48em !important;
+                height: 56em !important;
 
               }
+              .project-head .head__project-details .role {
+                background-color: #eaf8ff;
+                font-size: 1.2rem;
+                color: #3798c0;
+                border: 1px solid #3798c0;
+              }
               .project-head{
-                height: 48rem !important;
+                height: 56rem !important;
               }
             }
             .project:nth-child(3){
               &.odd{
-                height: 40em !important;
+                height: 52em !important;
 
               }
               .project-head{
-                height: 40em !important;
+                height: 52em !important;
+                .head__project-details .role {
+                  background-color: #fff2f1;
+                  font-size: 1.2rem;
+                  color: #b1200c;
+                  border: 1px solid #b1200c;
+                }
               }
             }
             .project:nth-child(4){
               &.even{
-                height: 48em !important;
+                height: 52em !important;
 
               }
               .project-head{
-                height: 48rem !important;
+                height: 52rem !important;
+                .head__project-details .role {
+                  background-color: #f1fff2;
+                  font-size: 1.2rem;
+                  color: #1f9e26;
+                  border: 1px solid #1f9e26;
+                }
               }
             }
             .project:nth-child(5){
               &.odd{
-                height: 52em !important;
+                height: 54em !important;
 
               }
               .project-head{
-                height: 52em !important;
+                height: 54em !important;
+                .head__project-details .role {
+                  background-color: #fff4f6;
+                  font-size: 1.2rem;
+                  color: #f52e58;
+                  border: 1px solid #f52e58;
+                }
               }
             }
             .project,&.odd{
@@ -1566,6 +1623,9 @@
                 height:100%  !important;
                 padding: 5vw !important;
                 .head__project-detail {
+                  display:grid;
+                  grid-template-rows: auto auto;
+                  grid-gap: 8px;
                   width:100%;
                   font-size: 2rem!important;
                   font-weight: 900;
@@ -1575,8 +1635,23 @@
                 }
                 .head__project-details{
                   position: relative;
-                  padding: 0px 5vw 0px 10vw  !important;
-                  
+                  padding: 0px 5vw 0px 5vw  !important;
+                  .roles{
+                    width: 400vw;
+                    height:40px;
+                  }
+                  .role{
+                    float: left;
+                    padding: 1vw 2vw;
+                    margin: 8px;
+                    margin-left: 0px;
+                    background-color: #f7f5f1;
+                    font-size: 1.2rem;
+                    color: #ffa500;
+                    border: 1px solid #ffa500;
+                    border-radius: 32px;
+                    text-align: center;
+                }
                 }
               }
               .project-body {
@@ -1627,10 +1702,10 @@
       } 
       &.illustrations{
         .illustrations__head{
-          font-size:2rem
+          font-size:3rem
         }
         .illustrations__body .art-strip{
-          height: 50vh!important;
+          height: 100vh!important;
           .block {
             height: 100%!important;
             background-size:  auto 80%;
@@ -1644,8 +1719,9 @@
           width: 100%;
           h1{
 
-            font-size: 2rem;
-            font-weight: 500;
+            
+    font-size: 2rem !important;
+    font-weight: 900;
             padding: 32px  16px 16px 16px;
           }
           p{

@@ -118,7 +118,7 @@ function App() {
           {/* Processes */}
           
           {/* Strategy */}
-          <div className="process strategy" data-aos="flip-up" data-aos-anchor-placement="top-botto">
+          <div className="process strategy" data-aos="fade-up" data-aos-anchor-placement="top-botto">
             <div className="strategy__left">
               <div className="process-heading">
                 <Parallax y={[-10,-40]}>
@@ -290,7 +290,7 @@ function App() {
                </div>
           </div>
           {/* Design */}
-          <div className="process design"  data-aos="flip-up" data-aos-anchor-placement="top-bottom">
+          <div className="process design"  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <div className="design__left">
                   <div className="process-image">
                   <svg xmlns="http://www.w3.org/2000/svg"  width="815" height="629.924" viewBox="0 0 815 629.924">
@@ -436,7 +436,7 @@ function App() {
               </div>
           </div>
           {/* Development */}
-          <div className="process development" data-aos="flip-up"  data-aos-anchor-placement="top-bottom">
+          <div className="process development" data-aos="fade-up"  data-aos-anchor-placement="top-bottom">
             <div className="development__left">
               <div className="process-heading">
               <Parallax y={[-10,-60]}>
@@ -991,7 +991,7 @@ function App() {
           <div className="case-study-projects__body">
             <div className="projects">
 
-              <div className="project odd" data-aos="flip-up" >
+              <div className="project odd" data-aos="fade-up" >
               <div className="project-display">
              
               </div>
@@ -1006,12 +1006,16 @@ function App() {
                     <div className="head__project-detail">
                       <div className="project-title"> Jingle for Spotify</div>
                       <span className="dot">
-                        <div className="dot-orange" data-aos="flip-up"></div>
+                        <div className="dot-orange" data-aos="fade-up"></div>
                       </span>
                     </div>
                     <div className="project-description">
-                    <Parallax y={[-90,20]}><p >Small Buisness Website</p></Parallax>
-                    <Parallax y={[-50,20]}><p >A website for wedding and event photography studio based in kochi.</p></Parallax>
+                    <Parallax y={[-90,20]} className="roles">
+                      <p className="role">Spotify API</p>
+                      <p className="role">Music Player</p>
+                      </Parallax>
+
+                    <Parallax y={[-50,20]} className="description"><p>A website for wedding and event photography studio based in kochi.</p></Parallax>
                   </div>
 
                   <a href="https://netflix-home-ui.web.app/" target="_blank">
@@ -1025,7 +1029,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="project even"  data-aos="flip-up">
+              <div className="project even"  data-aos="fade-up">
                 <div className="project-display"></div>
                 <div className="project-head">
 
@@ -1036,17 +1040,20 @@ function App() {
 
                   <Parallax y={[15, -5]} className="head__project-details">
                     <div className="head__project-detail">
-                      <div className="project-title"> Pre-screening App</div><span className="dot">
+                      <div className="project-title">Pre-screening App</div><span className="dot">
 
                         <div className="dot-orange"
-                              data-aos="flip-up"
+                              data-aos="fade-up"
                               ></div>
 
                       </span>
                     </div>
                   <div className="project-description">
-                    <Parallax y={[-90,20]}><p >Lakeridge Health</p></Parallax>
-                    <Parallax y={[-50,20]}><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
+                    <Parallax y={[-90,20]} className="roles">
+                      <p  className="role">Lakeridge Health</p>
+                      <p  className="role">Health Care</p>
+                      </Parallax>
+                    <Parallax y={[-50,20]} className="description"><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
                   </div>
                   <a href="https://lakeridge-clinical-trial.web.app/" target="_blank">
                     <div className="button">
@@ -1061,7 +1068,7 @@ function App() {
                 
               </div>
               
-              <div className="project odd" data-aos="flip-up">
+              <div className="project odd" data-aos="fade-up">
               <div className="project-display"></div>
                 <div className="project-head">
 
@@ -1074,12 +1081,12 @@ function App() {
                     <div className="head__project-detail">
                       <div className="project-title">Netflix </div>
                       <span className="dot">
-                        <div className="dot-orange" data-aos="flip-up"></div>
+                        <div className="dot-orange" data-aos="fade-up"></div>
                       </span>
                     </div>
                   <div className="project-description">
-                    <Parallax y={[-90,20]}><p >UI/UX Design  Hpme Page</p></Parallax>
-                    <Parallax y={[-50,20]}><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
+                    <Parallax y={[-90,20]}  className="roles" ><p className="role">UI/UX Design</p><p className="role">Home Page</p></Parallax>
+                    <Parallax y={[-50,20]}  className="description"><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
                   </div>
 
                   <a href="https://netflix-home-ui.web.app/" target="_blank">
@@ -1093,7 +1100,7 @@ function App() {
                 
                 </div>
                 </div>
-                <div className="project even"  data-aos="flip-up">
+                <div className="project even"  data-aos="fade-up">
                 <div className="project-display"></div>
                 <div className="project-head">
 
@@ -1107,14 +1114,18 @@ function App() {
                       <div className="project-title"> Easy Groceries</div><span className="dot">
 
                         <div className="dot-orange"
-                              data-aos="flip-up"
+                              data-aos="fade-up"
                               ></div>
 
                       </span>
                     </div>
                   <div className="project-description">
-                    <Parallax y={[-90,20]}><p >UI/UX Design</p></Parallax>
-                    <Parallax y={[-50,20]}><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
+                    <Parallax y={[-90,20]}  className="roles">
+                      <p  className="role">Online Groceries</p>
+                      <p  className="role">React</p>
+                      <p  className="role">Firebase</p>
+                      </Parallax>
+                    <Parallax y={[-50,20]}  className="description"><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
                   </div>
                   <div className="button">
                     <div className="">View project</div>
@@ -1126,7 +1137,7 @@ function App() {
                 
               </div>
               
-              <div className="project odd" data-aos="flip-up">
+              <div className="project odd" data-aos="fade-up">
               <div className="project-display"></div>
                 <div className="project-head">
 
@@ -1139,12 +1150,15 @@ function App() {
                     <div className="head__project-detail">
                       <div className="project-title"> Web Infographics </div>
                       <span className="dot">
-                        <div className="dot-orange" data-aos="flip-up"></div>
+                        <div className="dot-orange" data-aos="fade-up"></div>
                       </span>
                     </div>
                   <div className="project-description">
-                    <Parallax y={[-90,20]}><p >Intractive </p><p >Infographics </p><p >Vanilla JS </p></Parallax>
-                    <Parallax y={[-50,20]}>
+                    <Parallax y={[-90,20]} className="roles">
+                      <p  className="role">Intractive </p>
+                      <p  className="role">Infographics </p>
+                      <p  className="role">Vanilla JS </p></Parallax>
+                    <Parallax y={[-50,20]} className="description">
                       <p style={{opacity: 0.7}}>Voiceover🎙 : Sushant Saini</p>
                       <p >A movie diary web app developed using React and runs on firebase</p></Parallax>
                   </div>
@@ -1178,44 +1192,18 @@ function App() {
           </div>
         </div>
         </section>
-        {/* Frequency Asked  Questions */}
-        {/* <section className="faq">
-          <Parallax y={[0,0]} className="head__scroll-outer"><div className="faq__head">Frequently Asked Questions</div></Parallax>
-          <div className="faq__body">
-            <div className="faq__questions">
-              <div className="question-answer">
-                <div className="question">
-                  <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto et eaque, libero adipisci laudantium quos!</h2>
-                  <div className="plus-icon"></div>
-                  <div className="answer"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto et eaque, libero adipisci laudantium quos!</p></div>
-                  
-                  </div>
-                <div className="question">
-                  <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto et eaque, libero adipisci laudantium quos!</h2>
-                  <div className="plus-icon"></div>
-                  <div className="answer"><p></p></div>
-                  
-                  </div>
-                <div className="question">
-                  <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto et eaque, libero adipisci laudantium quos!</h2>
-                  <div className="plus-icon"></div>
-                  <div className="answer"><p></p></div>
-                  
-                  </div>
-                </div>
-              </div>
-            <div className="faq__image"></div>
-          </div>
-        </section>
- */}
+        
         {/* Call to action */}
         <section className="cta">
           <div className="end">
             <h1>And Now its your turn to say</h1>
             <p>I’ll Make it easy for you… This is how to pronounce my name - Abhay</p>
+            <audio controls loop autoplay height="" width="">
+              <source src="ssl.gstatic.com/dictionary/static/pronunciation/2021-06-17/audio/ab/abhay_en_us_1.mp3" type="audio/mp3" />
+            </audio>
             <p>I would love to here from you?</p>
           </div>
-          
+            
           <div className="cta-wrap">
                 <div className="email-cta">
                 <div className="icon"></div>
