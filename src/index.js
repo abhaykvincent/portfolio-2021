@@ -4,6 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+window.setTimeout(function() {
+   console.log('log')
+}, 7000); // 1000 milliseconds (1 second)
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
