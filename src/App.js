@@ -1,4 +1,5 @@
-import React, { /* useEffect, useRef, */ useState } from 'react';
+import React, {  useEffect, /*useRef, */ useState } from 'react';
+import $ from 'jquery'
 import './App.scss';
 // Components
 import Header from './components/header/header'
@@ -28,7 +29,7 @@ AOS.init({
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
   offset: 0, // offset (in px) from the original trigger point
   delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 300, // values from 0 to 3000, with step 50ms
+  duration: 0, // values from 0 to 3000, with step 50ms
   easing: 'ease', // default easing for AOS animations
   once: false, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
@@ -46,9 +47,11 @@ AOS.init({
 
 // APP
 function App() {
-
   // States
   const [notification, setNotification] = useState('');
+  useEffect(() => {
+    
+  }, [])
   return (
 
     // Parallax Provider -  CONTAINER
@@ -58,12 +61,12 @@ function App() {
       <div className="App">
 
         {/* Header */}
-        <Header/>
-
+        {/* <Header/>
+ */}
         {/* Notification */}
-        <div className={`notification ${notification} fixed` }>
+        {/* <div className={`notification ${notification} fixed` }>
           <div className="popup">Website maintenance in Progress. Portfolio 2021 RELEASING this FALL !</div> 
-        </div>
+        </div> */}
 
         {/* Sections */  //REF-01
         }   
@@ -73,8 +76,16 @@ function App() {
             <div className="hi">Hi</div>
             <div className="name-title-social">
               <div className="name">I'm Abhay Vincent </div>
-              <div className="title">Design Engineer</div>
-              <div className="techs"><p>React     Node.js     Firebase    Javascript</p></div>
+              <div className="title">Front-end Developer</div>
+              <div className="techs">
+              <p>React</p>
+              <p>CSS</p> <p>  Node.js </p> <p>  Firebase  </p>   <p> Javascript</p>  
+              <p>Redux</p> 
+              <p>SCSS</p>
+              <p>Express</p>
+              <p>Github</p>
+              
+              </div>
               <div className="social-links">
                 <div className="social"></div>
                 <div className="social"></div>
@@ -97,7 +108,9 @@ function App() {
               </div>
           </div>
           <div className="first-impression__right">
-          <iframe src='https://my.spline.design/hero2-9b50a5a7d14016d3b34ed8b989beb139/' frameborder='0' width='100%' height='100%'></iframe>
+          <iframe  id="hero-3d" src='https://my.spline.design/forestlightscopy-20f20695aeecc4b4df766868ff7fb7f8/' frameborder='0' width='100%' height='100%'>
+         
+          </iframe>
           </div>
           </section>
         <section className="first-imagery-impression">
@@ -130,7 +143,8 @@ function App() {
                   </div>
                 </Parallax>
                 <Parallax y={[-10,0]}>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad voluptas aspernatur ullam dolor leniti  maiores tempora sint, at,laboriosam accusantium!</p>
+                  <p>Strategy for Buisness</p>
+                  <p>A product strategy is a high-level plan describing what a business hopes to accomplish with its product and how it plans to do so. The strategy should answer key questions such as who the product will serve (personas), how it will benefit those personas, and the company’s goals for the product throughout its life cycle.</p>
                 </Parallax>
                 </div>
               </div>
@@ -430,7 +444,11 @@ function App() {
                   </div>
                 </Parallax>
                 <Parallax y={[-10,-20]}>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad voluptas aspernatur ullam dolor leniti  maiores tempora sint, at,laboriosam accusantium!</p>
+                  <p>Design for Human</p>
+                  <p>Product Design is an art of creating a product, that solving problems, to be sold by a business to its customers.</p>
+                  <p>The increasingly scientific focus of engineering in practice, however, has raised the importance of more new "human-centered" fields of design.</p>
+                  
+            
                 </Parallax>
                 </div>
               </div>
@@ -450,8 +468,7 @@ function App() {
                   </div>
               </Parallax>
               <Parallax y={[-10,-20]}>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad voluptas aspernatur ullam dolor leniti  maiores tempora sint, at,laboriosam accusantium!</p>
-              </Parallax>
+                <p>Developement in Technology</p> </Parallax>
               </div>
               </div>
             <div className="development__right">
@@ -1197,9 +1214,9 @@ function App() {
         <section className="cta">
           <div className="end">
             <h1>And Now its your turn to say</h1>
-            <p>I’ll Make it easy for you… This is how to pronounce my name - Abhay</p>
-            <audio controls loop autoplay height="" width="">
-              <source src="ssl.gstatic.com/dictionary/static/pronunciation/2021-06-17/audio/ab/abhay_en_us_1.mp3" type="audio/mp3" />
+            <p>I’ll Make it easy for you… This is how to pronounce my name - Abhay </p>
+            <audio controls  style={{width:'100px'}}>
+              <source src="//ssl.gstatic.com/dictionary/static/pronunciation/2021-06-17/audio/ab/abhay_en_us_1.mp3" type="audio/mp3" />
             </audio>
             <p>I would love to here from you?</p>
           </div>
