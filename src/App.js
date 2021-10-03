@@ -1,6 +1,7 @@
 import React, {  useEffect, /*useRef, */ useState } from 'react';
 import $ from 'jquery'
 import './App.scss';
+import Social from './components/social/social.jsx'
 // Components
 import Header from './components/header/header'
 
@@ -86,12 +87,7 @@ function App() {
               <p>Github</p>
               
               </div>
-              <div className="social-links">
-                <div className="social"></div>
-                <div className="social"></div>
-                <div className="social"></div>
-                <div className="social"></div>
-              </div>
+              <Social></Social>
               <div className="cta-wrap">
                 <div className="email-cta">
                 <div className="icon"></div>
@@ -119,6 +115,9 @@ function App() {
             <div className="image"></div>
             <div className="image"></div>
             <div className="image"></div>
+            <span></span>
+            <span></span>
+            <p className="credits">Photographs by <a className="akshay-link" href="">Akshay Moncy</a></p>
           </div>
           
         </section>
@@ -143,7 +142,7 @@ function App() {
                   </div>
                 </Parallax>
                 <Parallax y={[-10,0]}>
-                  <p>Strategy for Buisness</p>
+                  <p class="sub-heading">Strategy for Buisness</p>
                   <p>A product strategy is a high-level plan describing what a business hopes to accomplish with its product and how it plans to do so. The strategy should answer key questions such as who the product will serve (personas), how it will benefit those personas, and the company’s goals for the product throughout its life cycle.</p>
                 </Parallax>
                 </div>
@@ -444,7 +443,7 @@ function App() {
                   </div>
                 </Parallax>
                 <Parallax y={[-10,-20]}>
-                  <p>Design for Human</p>
+                  <p className="sub-heading">Design for Human</p>
                   <p>Product Design is an art of creating a product, that solving problems, to be sold by a business to its customers.</p>
                   <p>The increasingly scientific focus of engineering in practice, however, has raised the importance of more new "human-centered" fields of design.</p>
                   
@@ -468,7 +467,9 @@ function App() {
                   </div>
               </Parallax>
               <Parallax y={[-10,-20]}>
-                <p>Developement in Technology</p> </Parallax>
+                <p  className="sub-heading">Developement in Technology</p> 
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quia ipsam quos fugiat sint saepe minus assumenda? Dolorum perferendis cum commodi? Vel vitae consequuntur nam cupiditate illum ad velit, similique dolores quos? </p>
+                </Parallax>
               </div>
               </div>
             <div className="development__right">
