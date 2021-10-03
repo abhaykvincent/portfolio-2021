@@ -6,3 +6,4 @@ Projects - ADD description
 Project Link - FIX - Spotify
 Project Link - FIX - Easy Groceries
 Illustration Images
+Footer
