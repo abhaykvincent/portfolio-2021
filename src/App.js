@@ -32,7 +32,7 @@ AOS.init({
   delay: 0, // values from 0 to 3000, with step 50ms
   duration: 0, // values from 0 to 3000, with step 50ms
   easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
+  once: true, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement:'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
@@ -101,6 +101,7 @@ function App() {
               </div>
                 <div className="copy-icon"></div>
               </div>
+              <p className="hire">Hire me? <a href="">Download Resume</a> </p>
               </div>
           </div>
           <div className="first-impression__right">
@@ -467,8 +468,8 @@ function App() {
                   </div>
               </Parallax>
               <Parallax y={[-10,-20]}>
-                <p  className="sub-heading">Developement in Technology</p> 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quia ipsam quos fugiat sint saepe minus assumenda? Dolorum perferendis cum commodi? Vel vitae consequuntur nam cupiditate illum ad velit, similique dolores quos? </p>
+                <p  className="sub-heading">Programming Software Products</p> 
+                <p>Software product development basically implies the deployment of a set of features in a software product tailored to meet certain needs of a market. Software product development is a repetitive logical process that aims to builds a programmed software product to mark a unique personal or business goal, process, or objective</p>
                 </Parallax>
               </div>
               </div>
@@ -920,12 +921,7 @@ function App() {
                 <span className="head-text-border">Toronto</span>
               </div>
               <div className="quick-intro__about">I’m a Design Engineer who believes in Design , Good Design, that solves problems in artistic and logical ways.I help business & agencies to turn their ideas into designs and Digital products.</div>
-              <div className="quick-intro_social-links social-links">
-                <div className="social"></div>
-                <div className="social"></div>
-                <div className="social"></div>
-                <div className="social"></div>
-              </div>
+              <Social></Social>
               <div className="cta-wrap">
                 <div className="email-cta">
                 <div className="icon"></div>
@@ -945,63 +941,45 @@ function App() {
 
           </section>
         <section className="technologies">
-        <div className="technologies__body">
-        <Parallax x={[10, -10]}>
-          <div className="strip">
-            <div className="tech">Angular JS</div>
-            <div className="tech">HTML</div>
-            <div className="tech">Babel</div>
-            <div className="tech">Some Tech</div>
-            <div className="tech">Webpack</div>
-            <div className="tech">Vue JS </div>
-            <div className="tech">Python</div>
-            <div className="tech">React NativeJS</div>
-            <div className="tech">Redux</div>
-            <div className="tech">SCSS</div>
-            <div className="tech">Angular JS</div>
-            <div className="tech">HTML</div>
-            <div className="tech">Babel</div>
-            <div className="tech">Some Tech</div>
+          <Parallax y={[0,0]} className="head__scroll-outer"><div className="technologies__head">Skills and Technologies</div></Parallax>
+        <div className="technologies__body  no-scroll">
+          <div className="strip no-scroll">
+            <div className="tech">HTML <span className="exp"> 7+ Years</span></div>
+            <div className="tech">React <span className="exp"> 2+ Years</span></div>
+            <div className="tech">Redux <span className="exp"> 1+ Years</span></div>
+            <div className="tech">Node JS <span className="exp"> 3+ Years</span></div>
+            <div className="tech">CSS<span className="exp"> 5+ Years</span></div>
+            <div className="tech">SCSS <span className="exp"> 2+ Years</span></div>
+            <div className="tech">Responsive Web <span className="exp"> 4+ Years</span></div>
+            <div className="tech">SVG <span className="exp"> 3+ Years</span></div>
+            <div className="tech">GIT <span className="exp"> 4+ Years</span></div>
+            <div className="tech">REST API <span className="exp"> 2+ Years</span></div>
+            <div className="tech">Regex <span className="exp">2+ Years</span></div>
           </div>
-        </Parallax>
-        <Parallax x={[10, -30]}>
-          <div className="strip">
-            <div className="tech">Regex</div>
-            <div className="tech">D3</div>
-            <div className="tech">Tailwind</div>
-            <div className="tech">Mysql</div>
-            <div className="tech">PHP</div>
-            <div className="tech">jQuery</div>
-            <div className="tech">Material CSS</div>
-            <div className="tech">scss</div>
-            <div className="tech">Responsive Web</div>
-            <div className="tech">SVG</div>
-            <div className="tech">Regex</div>
-            <div className="tech">D3</div>
-            <div className="tech">Tailwind</div>
+          <div className="strip no-scroll">
+            <div className="tech">Javascript <span className="exp">6+ Years</span></div>
+            <div className="tech">Github <span className="exp">6+ Years</span></div>
+            <div className="tech">Jquery <span className="exp">4+ Years</span></div>
+            <div className="tech">Typescript <span className="exp">1+ Years</span></div>
+            <div className="tech">Firebase <span className="exp"> 2+ Years</span></div>
+            <div className="tech">NPM Scripts <span className="exp">2+ Years</span></div>
+            <div className="tech">PHP <span className="exp">5+ Years</span></div>
+            <div className="tech">Wordpress <span className="exp"> 2+ Years</span></div>
+            <div className="tech">Adobe XD <span className="exp">3+ Years</span></div>
+            <div className="tech">Tensorflow <span className="exp">2+ Years</span></div>
+            <div className="tech">Webpack <span className="exp">2+ Years</span></div>
+
           </div>
-        </Parallax>
-        <Parallax x={[10, -70]}>
-          <div className="strip">
-            <div className="tech">3D for web</div>
-            <div className="tech">eCommerce</div>
-            <div className="tech">GIT </div>
-            <div className="tech">Bootstrap</div>
-            <div className="tech">Foundation</div>
-            <div className="tech">SCSS</div>
-            <div className="tech">Some </div>
-            <div className="tech">Wordpress</div>
-            <div className="tech">Wix</div>
-            <div className="tech">NPM Scripts</div>
-            <div className="tech">3D for web</div>
-            <div className="tech">eCommerce</div>
-            <div className="tech">GIT </div>
-            <div className="tech">Foundation</div>
-            <div className="tech">SCSS</div>
-            <div className="tech">Some </div>
-            <div className="tech">Wordpress</div>
+          <div className="strip no-scroll">
+            <div className="tech">3D for web <span className="exp"> 1+ Years</span></div>
+            <div className="tech">eCommerce <span className="exp">2+ Years</span></div>
+            <div className="tech">Bootstrap <span className="exp"> 4+ Years</span></div>
+            <div className="tech">Material Design <span className="exp"> 1+ Years</span></div>
+            <div className="tech">Foundation <span className="exp"> 2+ Years</span></div>
+            <div className="tech">Wordpress <span className="exp"> 2+ Years</span></div>
+            <div className="tech">Wix <span className="exp"> 1+ Years</span></div>
+            <div className="tech">eCommerce <span className="exp"> 2+ Years</span></div>
           </div>
-        </Parallax>
         </div>
           </section>
         <section className="case-study-projects">
@@ -1033,7 +1011,9 @@ function App() {
                       <p className="role">Music Player</p>
                       </Parallax>
 
-                    <Parallax y={[-50,20]} className="description"><p>A website for wedding and event photography studio based in kochi.</p></Parallax>
+                    <Parallax y={[-50,20]} className="description">
+                      <p>UI/UX of a React web app for playing music using Spotify API, hosted on Google Firebase.</p>
+                      </Parallax>
                   </div>
 
                   <a href="https://netflix-home-ui.web.app/" target="_blank">
@@ -1071,7 +1051,7 @@ function App() {
                       <p  className="role">Lakeridge Health</p>
                       <p  className="role">Health Care</p>
                       </Parallax>
-                    <Parallax y={[-50,20]} className="description"><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
+                    <Parallax y={[-50,20]} className="description"><p >An application for pre-screening clinical trial patients develeped using Vanilla JavaScript for Lakeridhe Health Hospital.</p></Parallax>
                   </div>
                   <a href="https://lakeridge-clinical-trial.web.app/" target="_blank">
                     <div className="button">
@@ -1104,7 +1084,7 @@ function App() {
                     </div>
                   <div className="project-description">
                     <Parallax y={[-90,20]}  className="roles" ><p className="role">UI/UX Design</p><p className="role">Home Page</p></Parallax>
-                    <Parallax y={[-50,20]}  className="description"><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
+                    <Parallax y={[-50,20]}  className="description"><p >Clone of Netflix Homepage deveped using React and connect to theMovieDB API for dynamic data.</p></Parallax>
                   </div>
 
                   <a href="https://netflix-home-ui.web.app/" target="_blank">
@@ -1143,7 +1123,7 @@ function App() {
                       <p  className="role">React</p>
                       <p  className="role">Firebase</p>
                       </Parallax>
-                    <Parallax y={[-50,20]}  className="description"><p >A movie diary web app developed using React and runs on firebase</p></Parallax>
+                    <Parallax y={[-50,20]}  className="description"><p >An online groceries store web app develeped in React and state managed using react and hosted on firebase. Firestore is used as the database in this project.</p></Parallax>
                   </div>
                   <div className="button">
                     <div className="">View project</div>
@@ -1178,7 +1158,7 @@ function App() {
                       <p  className="role">Vanilla JS </p></Parallax>
                     <Parallax y={[-50,20]} className="description">
                       <p style={{opacity: 0.7}}>Voiceover🎙 : Sushant Saini</p>
-                      <p >A movie diary web app developed using React and runs on firebase</p></Parallax>
+                      <p >An interactive web infographics on climate change. This projeect is entirly made on HTML, vanilla Javascript and CSS.  </p></Parallax>
                   </div>
                   <a href="https://climate-change-infographics.web.app/" target="_blank">
                     <div className="button">

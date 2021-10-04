@@ -147,6 +147,16 @@
             }
             
           }
+          .hire{
+            margin-top: 8px*2;
+            color: rgba(165, 165, 165, 0.781);
+            a:link,
+            a:active,
+            a:visited
+            {
+              color: #ffc68e;
+            }
+          } 
         }
       }
     }
@@ -162,7 +172,6 @@
         grid-template-rows: auto 8px;
         grid-gap: 16px;
         height: 40vh;
-        transform: translateY(-50%);
         .credits {
           text-align: right;
           padding-right: 18px;
@@ -176,7 +185,7 @@
 
           background-color: #051722;
           border-radius: 4px;
-          &:nth-child(3){
+          &:nth-child(2){
             background-size: auto 100% ;
             background-position: center center;
             background-image:url(./images/image-imprsson/001.jpg) ;
@@ -186,7 +195,7 @@
             background-position: center center;
             background-image:url(./images/image-imprsson/002.jpg) ;
           }
-          &:nth-child(2){
+          &:nth-child(3){
             background-size: 150% auto;
             background-image:url(./images/image-imprsson/003.jpg) ;
             background-position: center;
@@ -487,7 +496,7 @@
               font-size: 3rem;
             }
             .head-text-border{
-              font-size: 4vw;
+              font-size: 3rem;
             }
             &:after{
               display: block;
@@ -519,25 +528,31 @@
     }
     &.technologies{
       position: relative;
-      background-color: #fff7eacf;
       padding: 2vw 0px;
       margin-top: 10vw;
       z-index: 25;
       /* transform: translateY(-15vw); */
+        .technologies__head{
+          padding-bottom: 10vw;
+          text-align: center;
+          color: #ffffff;
+          font-size:5vw;
+          font-weight: bold;
+          -webkit-text-stroke: 1px black;
+          z-index: 20;
+        }
       .technologies__body{
         overflow:scroll;
+        background-color: #fff7eacf;
+        padding: 2vw 1vw;
         .strip{
           display: grid;
-          width: 150vw;
+          width: 120rem;
           grid-auto-flow: column;
           align-items: start;
           color: rgb(241, 241, 241);
           overflow:scroll;
-          margin-left: -50px;
           margin-bottom: 8px;
-          &:nth-child(2){
-            opacity: 0.6;
-          }
           .tech{
             padding: 8px 16px;
             margin: 8px;
@@ -548,6 +563,11 @@
             border-radius: 32px;
             text-align: center;
             white-space: nowrap;
+            .exp{
+              font-size: 0.8rem;
+              color: #58411fb0;
+              padding-left: 8px;
+            }
           }
         }
       }
@@ -1062,7 +1082,7 @@
           .block{
             height: 60vw;
             width: 200vw;
-            //background: url('../src/images/illustrations/illustrations-mock-undraw-collecton4.svg');
+            background: url('../src/images/illustrations/illustrations-mock-undraw-collecton4.svg');
             background-size: auto 80%;
           }
         }
@@ -1451,6 +1471,10 @@
     color: white;
     font-weight: 600;
   }
+}
+.no-scroll::-webkit-scrollbar {
+    display: none;
+  
 }
 
 
