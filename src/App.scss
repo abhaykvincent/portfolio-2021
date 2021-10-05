@@ -164,7 +164,7 @@
       .image-background-layer{
         background-color: #FCECDB;
         width: 100vw;
-        height: 40vh;
+        height: 30vw;
       }
       .image-strip{
         display: grid;
@@ -172,6 +172,7 @@
         grid-template-rows: auto 8px;
         grid-gap: 16px;
         height: 40vh;
+        margin-top: -30vh;
         .credits {
           text-align: right;
           padding-right: 18px;
@@ -207,7 +208,6 @@
       display:grid;
       grid-gap: 5rem ;
       padding: 5vw 10VW;
-      margin-top: -64px;
       .process{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1561,10 +1561,11 @@ video::-webkit-media-controls-timeline {
               font-weight:500;
             }
             .techs{
-              grid-template-columns: auto auto ;
+              grid-template-columns: auto auto  auto;
               p{
 
-              font-size: 1rem;
+                padding: 4px 8px;
+              font-size: 0.8rem;
               }
 
               p:nth-child(7){
@@ -1743,6 +1744,7 @@ video::-webkit-media-controls-timeline {
         }
       }
       &.technologies{
+        display:none;
         .technologies__body{
           .strip{
             display: grid;
@@ -1833,11 +1835,11 @@ video::-webkit-media-controls-timeline {
             }
             .project:nth-child(4){
               &.even{
-                height: 52em !important;
+                height: 58em !important;
 
               }
               .project-head{
-                height: 52rem !important;
+                height: 58rem !important;
                 .head__project-details .role {
                   background-color: #f1fff2;
                   font-size: 1.2rem;
@@ -1848,11 +1850,11 @@ video::-webkit-media-controls-timeline {
             }
             .project:nth-child(5){
               &.odd{
-                height: 54em !important;
+                height: 62em !important;
 
               }
               .project-head{
-                height: 54em !important;
+                height: 62em !important;
                 .head__project-details .role {
                   background-color: #fff4f6;
                   font-size: 1.2rem;
@@ -1893,7 +1895,7 @@ video::-webkit-media-controls-timeline {
                   position: relative;
                   padding: 0px 5vw 0px 5vw  !important;
                   .roles{
-                    width: 400vw;
+                    width: 100vw;
                     height:40px;
                   }
                   .role{
