@@ -13,6 +13,8 @@ import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 // AOS script and css import
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import { Link, 
+  BrowserRouter as Router, } from 'react-router-dom';
 
 //AOS initalization
 AOS.init({
@@ -101,7 +103,9 @@ function App() {
               </div>
                 <div className="copy-icon"></div>
               </div>
-              <p className="hire">Hire me? <a href="">Download Resume</a> </p>
+              <p className="hire">Hire me? 
+                <a href="./resume.pdf" target="_blank" download="AbhayVincent_resumes" >Download Resume</a> 
+                </p>
               </div>
           </div>
           <div className="first-impression__right">
@@ -1016,7 +1020,7 @@ function App() {
                       </Parallax>
                   </div>
 
-                  <a href="https://netflix-home-ui.web.app/" target="_blank">
+                  <a href="https://jingle-spotify.web.app" target="_blank">
                     <div className="button">
                       <div className="">View project</div>
                       <div className="icon"></div>
@@ -1098,7 +1102,7 @@ function App() {
                 
                 </div>
                 </div>
-                <div className="project even"  data-aos="fade-up">
+                {/* <div className="project even"  data-aos="fade-up">
                 <div className="project-display"></div>
                 <div className="project-head">
 
@@ -1134,8 +1138,8 @@ function App() {
                 </div>
                 
               </div>
-              
-              <div className="project odd" data-aos="fade-up">
+               */}
+              <div className="project even" data-aos="fade-up">
               <div className="project-display"></div>
                 <div className="project-head">
 
@@ -1194,7 +1198,7 @@ function App() {
         {/* Call to action */}
         <section className="cta">
           <div className="end">
-            <h1>And Now its your turn to say</h1>
+            <h1>And Now its your turn to say Hi</h1>
             <p>I’ll Make it easy for you… This is how to pronounce my name - Abhay </p>
             <audio controls  style={{width:'100px'}}>
               <source src="//ssl.gstatic.com/dictionary/static/pronunciation/2021-06-17/audio/ab/abhay_en_us_1.mp3" type="audio/mp3" />
@@ -1214,12 +1218,7 @@ function App() {
                   }}>abhaykvincent@gmail.com</div>
               </div>
               </div>
-          <div className="cta-social social-links">
-                <div className="social"></div>
-                <div className="social"></div>
-                <div className="social"></div>
-                <div className="social"></div>
-              </div>
+          <Social/>
           </section>
         
         {/* Footer */}
@@ -1239,6 +1238,7 @@ function App() {
       </div>
 
     </ParallaxProvider> /* Parellax provider CONTAINER !!  END !! */
+    
   );
 }
 

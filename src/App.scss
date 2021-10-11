@@ -53,7 +53,6 @@
       padding-top: 0vh;
       grid-template-columns:50vw 60vw ;
       background-color: #000;
-      background-image: url('../src/images/hero-002-maxLite-video.gif');
       background-size: 60vw auto;
       background-position:center right;
       background-repeat: no-repeat;
@@ -63,7 +62,7 @@
         height: 90vh;
         top: 0vh;
         transform:translateX(-10vw);
-        background-image: url('../src/images/first-impression/hero-loading-FI.gif');
+        background-image: url('../src/images/hero-002-video.gif');
         background-size: 100%;
         background-position:bottom right;
         background-repeat: no-repeat;
@@ -91,6 +90,7 @@
           background: #fff2d71c;
           border-radius: 52% 49% 50% 51%;
           animation: hi-reveal 1s;
+          animation-delay: 6s;
           text-align: center;
 
         }
@@ -98,7 +98,7 @@
           .name{
             
             animation: name-reveal 1s;
-            animation-delay: 0.3s;
+            animation-delay: 6.3s;
             animation-fill-mode: forwards;
 
             font-size: 3rem;
@@ -117,7 +117,7 @@
             font-weight: 300;
 
             animation: name-reveal 1s;
-            animation-delay: 0.6s;
+            animation-delay: 6.6s;
             animation-fill-mode: forwards;
             
             transform:scale(0.95);
@@ -134,7 +134,7 @@
             opacity: 0;
             transform:scale(0.95);
             animation: techs-reveal 1s;
-            animation-delay: 0.9s;
+            animation-delay: 6.9s;
             animation-fill-mode: forwards;
             p{
               padding:8px 16px;
@@ -903,7 +903,7 @@
                 }
               }
             }
-            &:nth-child(4){
+            /* &:nth-child(4){
               z-index: 22;
               background-color:#EDFFEE ;
               background-image:url('../src/images/projects/easy-groiceries.svg') ;
@@ -917,12 +917,12 @@
                   background-color: #34d23c !important;
                 }
               }
-            }
-            &:nth-child(5){
+            } */
+            &:nth-child(4){
               z-index: 21;
               background-color:#FDEAEF ;
               background-image:url('../src/images/projects/infographics.svg') ;
-              background-position:center left 5%;
+              background-position:center right 5%;
               background-size: auto 60%;
               .button{
                 background-color: #f52d57;
@@ -1012,7 +1012,7 @@
               }
             }
           }
-          .project:nth-child(4){
+          /* .project:nth-child(4){
             .project-head{
               .head__project-details .role {
                 background-color: #f1fff2;
@@ -1021,8 +1021,8 @@
                 border: 1px solid #1f9e26;
               }
             }
-          }
-          .project:nth-child(5){
+          } */
+          .project:nth-child(4){
             .project-head{
               .head__project-details .role {
                 background-color: #fff4f6;
@@ -1832,7 +1832,7 @@ video::-webkit-media-controls-timeline {
                   border: 1px solid #b1200c;
                 }
               }
-            }
+            }/* 
             .project:nth-child(4){
               &.even{
                 height: 58em !important;
@@ -1847,9 +1847,9 @@ video::-webkit-media-controls-timeline {
                   border: 1px solid #1f9e26;
                 }
               }
-            }
-            .project:nth-child(5){
-              &.odd{
+            } */
+            .project:nth-child(4){
+              &.even{
                 height: 62em !important;
 
               }
